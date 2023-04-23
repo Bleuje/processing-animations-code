@@ -30,7 +30,7 @@ Please note that these ratings are highly subjective and are intended to serve a
 
 # Motivation and information
 
-During my early months exploring animations with Processing, I stumbled upon the source code of some captivating gifs created by [beesandbombs (Dave)](https://beesandbombs.com/). Although I only examined a fraction of his [code examples](https://gist.github.com/beesandbombs), I made the effort to comprehend them as much as possible. This experience significantly influenced my skills – I discovered new techniques, had some enigmas unraveled, improved my mathematical approach, and improved my workflow. I even adopted Dave's motion blur template.
+During my early months exploring animations with [Processing](https://processing.org/), I stumbled upon the source code of some captivating gifs created by [beesandbombs (Dave)](https://beesandbombs.com/). Although I only examined a fraction of his [code examples](https://gist.github.com/beesandbombs), I made the effort to comprehend them as much as possible. This experience significantly influenced my skills – I discovered new techniques, had some enigmas unraveled, improved my mathematical approach, and improved my workflow. I even adopted Dave's motion blur template.
 
 Over the years, I've shared numerous source codes from my animations. However, I often presented these codes in their raw form, as they appeared once I completed each animation. This approach allowed me to genuinely reveal my work with minimal effort while also showcasing the mathematical concepts behind them. My primary focus was always on the visual outcome, rather than perfecting the code's aesthetics.
 
