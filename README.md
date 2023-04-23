@@ -9,7 +9,7 @@ Here are the links to the source codes of some of my animations. For more contex
 | [**sphere wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spherewave/spherewave.pde) | [view](https://bleuje.com/gifanimationsite/single/spherewave/) | 2022 | ⭐⭐⭐⭐ | vector maths, easing |
 | [**Sierpinski triangle loop**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop/sierpinskiloop.pde) | [view](https://twitter.com/etiennejcb/status/1367173073250758661) | 2017/2021 | ⭐⭐+ | recursion, chromatic abberation |
 | [**radial collapse**](https://github.com/Bleuje/processing-animations-code/blob/main/code/radialcollapse/radialcollapse.pde) | [view](https://bleuje.com/gifanimationsite/single/radialcollapse/) | 2020 | ⭐⭐⭐ | fractal zoom, replacement technique, noise |
-| [**2D fractal sliding squares** *](https://github.com/Bleuje/processing-animations-code/blob/main/code/fractalsliding2d/fractalsliding2d.pde) | [view](https://bleuje.com/gifanimationsite/single/2dfractalslidingsquares/) | 2023 | ⭐⭐⭐⭐+ | recursion, fractal zoom, tree structure |
+| [**2D fractal sliding squares** **\***](https://github.com/Bleuje/processing-animations-code/blob/main/code/fractalsliding2d/fractalsliding2d.pde) | [view](https://bleuje.com/gifanimationsite/single/2dfractalslidingsquares/) | 2023 | ⭐⭐⭐⭐+ | recursion, fractal zoom, tree structure |
 | [**digits spiral**](https://github.com/Bleuje/processing-animations-code/blob/main/code/digitsspiral/digitsspiral.pde) | [view](https://bleuje.com/gifanimationsite/single/digitsspiral/) | 2018 | ⭐⭐ | replacement technique, spiral, noise |
 | [**torus curve**](https://github.com/Bleuje/processing-animations-code/blob/main/code/toruscurve/toruscurve.pde) | [view](https://bleuje.com/gifanimationsite/single/toruscurve/) | 2023 | ⭐⭐⭐⭐⭐+ | 3D geometry, mesh |
 | [**fluid sphere obstacle**](https://github.com/Bleuje/processing-animations-code/blob/main/code/fluidsphereobstacle/fluidsphereobstacle.pde) | [view](https://bleuje.com/gifanimationsite/single/fluidsphereobstacle/) | 2017 | ⭐⭐+ | simulation, replacement technique |
@@ -18,7 +18,7 @@ Here are the links to the source codes of some of my animations. For more contex
 | [**sphere impacts**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sphereimpacts/sphereimpacts.pde) | [view](https://bleuje.com/gifanimationsite/single/sphereimpacts/) | 2021 | ⭐⭐⭐ | particles effects, 3D geometry |
 | [**spiral wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralwave/spiralwave.pde) | [view](https://bleuje.com/gifanimationsite/single/spiralwave/) | 2021 | ⭐⭐⭐ | replacement technique, mesh, spiral wave |
 
-* Collaboration with Yann Le Gall
+\* Collaboration with Yann Le Gall
 
 Most animations rely a lot on delay/offset techniques (something normal when time is involved :) ). Most of them also use basic object oriented programming.
 
