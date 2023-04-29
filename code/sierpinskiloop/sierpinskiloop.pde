@@ -116,6 +116,14 @@ void draw_(){
   push();
   translate(width/2,height/2+50);
   
+  // defining the main triangle vertices' positions
+  float a1 = TWO_PI*0.0/3.0-HALF_PI;
+  PVector v1 = new PVector(R*cos(a1),R*sin(a1));
+  float a2 = TWO_PI*1.0/3.0-HALF_PI;
+  PVector v2 = new PVector(R*cos(a2),R*sin(a2));
+  float a3 = TWO_PI*2.0/3.0-HALF_PI;
+  PVector v3 = new PVector(R*cos(a3),R*sin(a3));
+  
   noFill();
   
   blendMode(ADD); // to add layers of red, green and blue drawings, for chromatic aberration style
@@ -123,14 +131,6 @@ void draw_(){
   for(int col=0;col<3;col++) // RGB chromatic aberration loop
   {
     stroke(255*int(col==0),255*int(col==1),255*int(col==2)); // draw in red, green or blue depending on col
-    
-    // defining the main triangle vertices' positions
-    float a1 = TWO_PI*0.0/3.0-HALF_PI;
-    PVector v1 = new PVector(R*cos(a1),R*sin(a1));
-    float a2 = TWO_PI*1.0/3.0-HALF_PI;
-    PVector v2 = new PVector(R*cos(a2),R*sin(a2));
-    float a3 = TWO_PI*2.0/3.0-HALF_PI;
-    PVector v3 = new PVector(R*cos(a3),R*sin(a3));
     
     strokeWeight(SWMAX);
     triangle(v1.x,v1.y,v2.x,v2.y,v3.x,v3.y); // drawing the main triangle
