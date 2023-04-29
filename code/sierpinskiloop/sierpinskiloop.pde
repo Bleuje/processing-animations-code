@@ -74,11 +74,11 @@ void setup(){
 // v1,v2,v3 are the vertices of a current triangle to draw, this function is recursive
 // it is the current index of iterations
 // p is a time parameter
-void drawFractal(int it,PVector v1,PVector v2,PVector v3,float p)
+void drawFractal(float p,PVector v1,PVector v2,PVector v3,int iterationsIndex)
 {
-  if(it>=DEPTH) return;
+  if(iterationsIndex>=DEPTH) return;
   
-  float sw = map(it+p,0,DEPTH,SWMAX,0);
+  float sw = map(iterationsIndex+p,0,DEPTH,SWMAX,0);
   strokeWeight(sw);
   
   triangle(v1.x,v1.y,v2.x,v2.y,v3.x,v3.y);
@@ -89,9 +89,9 @@ void drawFractal(int it,PVector v1,PVector v2,PVector v3,float p)
   PVector u2 = v2.copy().add(v3).mult(0.5); // position at the middle between v2 and v3
   PVector u3 = v3.copy().add(v1).mult(0.5); // position at the middle between v3 and v1
   
-  drawFractal(it+1,v1,u1,u3,p);
-  drawFractal(it+1,u1,v2,u2,p);
-  drawFractal(it+1,u3,u2,v3,p);
+  drawFractal(p,v1,u1,u3,iterationsIndex+1);
+  drawFractal(p,u1,v2,u2,iterationsIndex+1);
+  drawFractal(p,u3,u2,v3,iterationsIndex+1);
 }
 
 // first level with some new fractal triangles coming in
@@ -106,9 +106,9 @@ void drawThing(float p,PVector v1,PVector v2,PVector v3)
   PVector w3 = v3.copy().lerp(u2,p); // go from v3 to u2 with time
   PVector w4 = v3.copy().lerp(u3,p); // go from v3 to u3 with time
   
-  drawFractal(0,v1,w1,w4,p);
-  drawFractal(0,w1,v2,w2,p);
-  drawFractal(0,w4,w3,v3,p);
+  drawFractal(p,v1,w1,w4,0);
+  drawFractal(p,w1,v2,w2,0);
+  drawFractal(p,w4,w3,v3,0);
 }
 
 void draw_(){
@@ -118,11 +118,11 @@ void draw_(){
   
   noFill();
   
-  blendMode(ADD);
+  blendMode(ADD); // to add layers of red, green and blue drawings, for chromatic aberration style
   
   for(int col=0;col<3;col++) // RGB chromatic aberration loop
   {
-    stroke(255*int(col==0),255*int(col==1),255*int(col==2));
+    stroke(255*int(col==0),255*int(col==1),255*int(col==2)); // draw in red, green or blue depending on col
     
     // defining the main triangle vertices' positions
     float a1 = TWO_PI*0.0/3.0-HALF_PI;
@@ -133,17 +133,17 @@ void draw_(){
     PVector v3 = new PVector(R*cos(a3),R*sin(a3));
     
     strokeWeight(SWMAX);
-    triangle(v1.x,v1.y,v2.x,v2.y,v3.x,v3.y);
+    triangle(v1.x,v1.y,v2.x,v2.y,v3.x,v3.y); // drawing the main triangle
     
     int N = 16;
     for(int i=0;i<N;i++){ // drawing the fractal N times, changing the time with little delays (trail effect)
       float t2 = 3*t + 0.011*col + 0.0015*i; // delay both based on R, G or B color, and on i of the loop*
       
-      float rot = floor(t2)%3; // we draw the scene with 3 different successive rotations
+      float rotationIndex = floor(t2)%3; // we draw the scene with 3 different successive rotations
       float q = t2%1; // fractional part for time inside current rotation
       
       push();
-      rotate(TWO_PI*rot/3);
+      rotate(TWO_PI*rotationIndex/3);
       drawThing(ease(constrain(q,0,1),2.1),v1,v2,v3);
       pop();
     }
