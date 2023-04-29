@@ -39,7 +39,7 @@ With the support and encouragement I've received, I believe that sharing my anim
 
 The aim of this project is to compile a selection of animation source codes that I find noteworthy, while enhancing and clarifying them through clearer, commented code. As I continue to add new examples and refine existing ones, this project should be a permanent work in progress. Although the code may have imperfections (e.g., suboptimal variable names or not the simplest possible solutions), I hope it represents a meaningful improvement over my previously shared work.
 
-To better understand the examples, those new to creative coding or looking for additional context might find it helpful to first explore the [**tutorials on my website**](https://bleuje.com/tutorials/). In particular, the ""[Replacement Technique](https://bleuje.com/tutorial4/)"" and the tutorial about beesandbombs' [motion blur template](https://bleuje.com/tutorial6/) provide context and foundational knowledge. 
+To better understand the examples, those new to creative coding or looking for additional context might find it helpful to first explore the [**tutorials on my website**](https://bleuje.com/tutorials/). In particular, the "[Replacement Technique](https://bleuje.com/tutorial4/)" and the tutorial about beesandbombs' [motion blur template](https://bleuje.com/tutorial6/) provide context and foundational knowledge. 
 
 I hope that this collection of animation source code might serve as a helpful educational resource for those interested in delving deeper into the world of Processing-based animations. I hope that my work could inspire and support others on their creative journeys, just as beesandbombs' work has done for me.
 
