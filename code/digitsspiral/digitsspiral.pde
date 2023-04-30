@@ -63,11 +63,13 @@ int n = 4; // number "changing digit instances"
 int K = 2350; // number of digits on a path with replacement technique
 int numberOfTurns = 40; // number of spiral turns
 
-class Digit{ // represents a single element moving with replacement technique, actually with changing displayed digits
+class Digit // represents a single element moving with replacement technique, actually with changing displayed digits
+{
   float seed = random(10,1000);
   int seed2 = floor(random(100,10000));
   
-  void show(float p){ // p is in [0,1]
+  void show(float p) // p is in [0,1]
+  {
     // the following two lines are quite experimental, using noise to randomly change the displayed digit in function of p
     int mult = floor(seed2+700*(0.8*p+0.8*(float)noise.eval(0.8*p,seed)));
     int digit = (seed2+mult*2017)%10; // modulo 10 to have an integer in [0,9]
@@ -83,25 +85,30 @@ class Digit{ // represents a single element moving with replacement technique, a
 
 Digit[] array = new Digit[n];
 
-void setup(){
+void setup()
+{
   size(600,600,P3D);
   result = new int[width*height][3];
   
   noise = new OpenSimplexNoise();
   
-  for(int i=0;i<n;i++){
+  for(int i=0;i<n;i++)
+  {
     array[i] = new Digit();
   }
 }
 
-void draw_(){
+void draw_()
+{
   background(0);
   push();
   translate(width/2,height/2);
   rotate(-HALF_PI);
   
-  for(int i=0;i<n;i++){
-    for(int k=0;k<K;k++){
+  for(int i=0;i<n;i++)
+  {
+    for(int k=0;k<K;k++)
+    {
       float q = k+t; // replacement technique
       q += 1.0*i/n; // added offset in function of digit index
       float p = q/K; // normalization so that p is in [0,1]
