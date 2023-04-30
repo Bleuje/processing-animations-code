@@ -63,54 +63,62 @@ int numberOfSimulationSteps = 50;
 float timeStep = 0.3;
 
 // class for a center of repulsion, here we will actually have only one instance
-class Center{
+class Center
+{
   float x,y;
 
   float repulseIntensity;
   
-  Center(float x_,float y_,float r){
+  Center(float x_,float y_,float r)
+  {
     x = x_;
     y = y_;
     repulseIntensity = r;
   }
   
-  void show(){
+  void show()
+  {
     stroke(255,0,0);
     strokeWeight(3);
     point(x,y);
   }
 }
 
-class Path{
+class Path
+{
   // random start positions
   float currentX = random(-width,2*width);
   float currentY = lerp(1.3*height,-height,pow(random(1),5));
   
-  ArrayList<PVector> positions = new ArrayList<PVector>(); // lsit of recorded positions with simulation
+  ArrayList<PVector> positions = new ArrayList<PVector>(); // list of recorded positions with simulation
   
   float sw = random(1,2); // strokeWeight parameter
   int numberOfParticlesOnPath = 3;
   float tOffset = random(1); // particles of different paths don't start at the same time thanks to this offset
   
-  Path(){
+  Path()
+  {
     positions.add(new PVector(currentX,currentY));
   }
   
-  void update(){
+  void update()
+  {
     PVector velocity = field(currentX,currentY);
     currentX += timeStep*velocity.x;
     currentY += timeStep*velocity.y;
     positions.add(new PVector(currentX,currentY));
   }
   
-  void show(){
+  void show()
+  {
     strokeWeight(sw);
     float tt = (t+tOffset)%1;
     int len = positions.size();
     
     // replacement technique on path with numberOfParticlesOnPath particles
     // and linear interpolation between positions recorded during simulation
-    for(int i=0;i<numberOfParticlesOnPath;i++){
+    for(int i=0;i<numberOfParticlesOnPath;i++)
+    {
       float floatIndex = constrain(map(i+tt,0,numberOfParticlesOnPath,0,len-1-0.01),0,len-1)*0.999999; // mapping from numberOfParticlesOnPath range to recorded positions range
       // 0.99999 factor to make sure that the index2 below won't go out of array bounds
       
@@ -133,14 +141,15 @@ Center[] centersArray = new Center[N];
 Path[] pathsArray = new Path[numberOfPaths];
 
 // "velocity field" / "flow field"
-PVector field(float x,float y){
-  
+PVector field(float x,float y)
+{
   float repulsionAmount = 20;
   float noiseAmount = 15;
   
   PVector velocitySum = new PVector(15,-30); // starting with large constant velocity
   // sums of effect of many spheres, but we only have one here
-  for(int i = 0;i<N;i++){
+  for(int i = 0;i<N;i++)
+  {
     PVector centerPos = new PVector(centersArray[i].x,centersArray[i].y);
     PVector vecFromCenterToPos = (new PVector(x,y)).sub(centerPos);
     float distance = vecFromCenterToPos.mag();
@@ -164,25 +173,30 @@ PVector field(float x,float y){
   return velocitySum;
 }
 
-void computePathsStep(){
-  for(int i=0;i<numberOfPaths;i++){
+void computePathsStep()
+{
+  for(int i=0;i<numberOfPaths;i++)
+  {
     pathsArray[i].update();
   }
 }
 
-void setup(){
+void setup()
+{
   size(500,500,P3D);
   result = new int[width*height][3];
   background(0);
   
   centersArray[0] = new Center(0.5*width,0.4*height,5);
   
-  for(int i=0;i<numberOfPaths;i++){
+  for(int i=0;i<numberOfPaths;i++)
+  {
     pathsArray[i] = new Path();
   }
   
   // simulation done in setup()
-  for(int i=0;i<numberOfSimulationSteps;i++){
+  for(int i=0;i<numberOfSimulationSteps;i++)
+  {
     println("simulation step : ",i+1);
     computePathsStep();
   }
@@ -190,7 +204,8 @@ void setup(){
 
 
 
-void draw_(){
+void draw_()
+{
   background(0);
   push();
 
@@ -198,12 +213,14 @@ void draw_(){
   rotateX(0.95);
   
   // draw particles
-  for(int i=0;i<numberOfPaths;i++){
+  for(int i=0;i<numberOfPaths;i++)
+  {
     pathsArray[i].show();
   }
   
   // draw spheres
-  for(int i=0;i<N;i++){
+  for(int i=0;i<N;i++)
+  {
     float sphereRadius = 6.6*centersArray[i].repulseIntensity;
     push();
     translate(centersArray[i].x+4,centersArray[i].y-12);
