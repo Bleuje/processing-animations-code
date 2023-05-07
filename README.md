@@ -17,6 +17,8 @@ Here are the links to the source codes of some of my animations. For more contex
 | [**two levels sliding**](https://github.com/Bleuje/processing-animations-code/blob/main/code/twolevelssliding/twolevelssliding.pde) | [view](https://bleuje.com/gifanimationsite/single/twolevelssliding/) | 2021 | ⭐⭐⭐⭐ | replacement technique, simulation |
 | [**sphere impacts**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sphereimpacts/sphereimpacts.pde) | [view](https://bleuje.com/gifanimationsite/single/sphereimpacts/) | 2021 | ⭐⭐⭐ | particles effects, 3D geometry |
 | [**spiral wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralwave/spiralwave.pde) | [view](https://bleuje.com/gifanimationsite/single/spiralwave/) | 2021 | ⭐⭐+ | replacement technique, mesh, spiral wave |
+| [**permutation patterns propagation**](https://github.com/Bleuje/processing-animations-code/blob/main/code/permutationpatternspropagation/permutationpatternspropagation.pde) | [view](https://bleuje.com/gifanimationsite/single/permutationpatternspropagation/) | 2021 | ⭐⭐⭐⭐⭐ | simulation, permutation patterns |
+| [**sun connections**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sunconnections/sunconnections.pde) | [view](https://bleuje.com/gifanimationsite/single/sunconnections/) | 2018 | ⭐⭐+ | interpolation with delay, noise loop |
 
 \* Collaboration with Yann Le Gall
 
