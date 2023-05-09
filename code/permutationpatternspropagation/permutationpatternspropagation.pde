@@ -46,7 +46,6 @@ void draw() {
     updatePixels();
 
     saveFrame("fr###.png");
-    //saveFrame("png/fr#####.png");
     println(frameCount,"/",numFrames);
     if (frameCount==numFrames)
       exit();
@@ -71,7 +70,7 @@ PVector nextPositionField(int mainType,int i,int j)
   if(mainType==0||mainType==1) // patterns : set of "slices"
   {
     int subSize = (mainType==0?4:32); // separating the patterns into squares of size subSize
-    int subType = ((i/subSize) + (j/subSize))%2; // getting different types with which square we're into
+    int subType = ((i/subSize) + (j/subSize))%2; // getting different types depending on which square we're into
     int ISubSize = (subType==0?2:subSize);
     int JSubSize = (subType==1?2:subSize);
     int localI = i%ISubSize;
