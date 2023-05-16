@@ -3,7 +3,7 @@
 Here are the links to the source codes of some of my animations. For more context and insights about this project, please read the text below.
 
 
-| Code link | Result | Year | Difficulty rating | Some used concepts |
+| Code link | Result | Year | Difficulty rating | Some used techniques |
 |-------------|--------|------|-------------------|--------------------|
 | [**hilbert curve transforms**](https://github.com/Bleuje/processing-animations-code/blob/main/code/hilbertcurvetransforms/hilbertcurvetransforms.pde) | [view](https://bleuje.com/gifanimationsite/single/hilbertcurvetransforms/) | 2022 | ⭐⭐⭐⭐ | easing, hilbert curve |
 | [**sphere wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spherewave/spherewave.pde) | [view](https://bleuje.com/gifanimationsite/single/spherewave/) | 2022 | ⭐⭐⭐⭐ | vector maths, easing |
@@ -43,7 +43,7 @@ The aim of this project is to compile a selection of animation source codes that
 
 To better understand the examples, those new to creative coding or looking for additional context might find it helpful to first explore the [**tutorials on my website**](https://bleuje.com/tutorials/). In particular, the "[Replacement Technique](https://bleuje.com/tutorial4/)" and the tutorial about beesandbombs' [motion blur template](https://bleuje.com/tutorial6/) provide context and foundational knowledge. 
 
-I hope that this collection of animation source code might serve as a helpful educational resource for those interested in delving deeper into the world of Processing-based animations. I hope that my work could inspire and support others on their creative journeys, just as beesandbombs' work has done for me.
+I hope that this collection of animation source code might serve as a valuable resource for those interested in delving deeper into the world of Processing-based animations, whether for educational purposes or simply to satisfy their curiosity. I hope that my work could inspire and support others on their creative journeys, just as beesandbombs' work has done for me.
 
 ## Acknowledgments and Licensing
 
