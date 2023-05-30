@@ -8,36 +8,11 @@
 int[][] result;
 float t, c;
 
-float c01(float x)
-{
-  return constrain(x,0,1);
-}
-
 float ease(float p, float g) {
   if (p < 0.5) 
     return 0.5 * pow(2*p, g);
   else
     return 1 - 0.5 * pow(2*(1 - p), g);
-}
-
-float map(float x, float a, float b, float c, float d, boolean constr)
-{
-  return constr ? constrain(map(x,a,b,c,d),min(c,d),max(c,d)) : map(x,a,b,c,d);
-}
-
-float mp01(float x, float a, float b)
-{
-  return map(x,a,b,0,1,true);
-}
-
-float pow_(float p,float g)
-{
-  return 1-pow(1-p,g);
-}
-
-float tanh(float x)
-{
-  return (float)Math.tanh(x);
 }
 
 void draw() {
