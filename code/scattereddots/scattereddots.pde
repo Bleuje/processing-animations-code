@@ -1,7 +1,5 @@
 // Processing code by Etienne Jacob
 // motion blur template by beesandbombs
-// opensimplexnoise code (by Kurt Spencer) in another tab might be necessary
-// --> code here : https://gist.github.com/Bleuje/fce86ef35b66c4a2b6a469b27163591e
 // See the license information at the end of this file.
 // result here : https://bleuje.com/gifanimationsite/single/scattereddots/
 
