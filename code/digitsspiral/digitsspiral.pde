@@ -3,7 +3,6 @@
 // needs opensimplexnoise code in another tab
 // --> code here : https://gist.github.com/Bleuje/fce86ef35b66c4a2b6a469b27163591e
 // See the license information at the end of this file.
-// View the rendered result at: https://bleuje.com/gifanimationsite/single/digitsspiral/
 
 int[][] result;
 float t, c;
@@ -59,22 +58,43 @@ boolean recording = false;
 
 OpenSimplexNoise noise;
 
+// note: note a really good animation/code example,
+// I should look for other ones for quite simple animation code
+
 int n = 4; // number "changing digit instances"
 int K = 2350; // number of digits on a path with replacement technique
 int numberOfTurns = 40; // number of spiral turns
 
 class Digit // represents a single element moving with replacement technique, actually with changing displayed digits
 {
-  float seed = random(10,1000);
-  int seed2 = floor(random(100,10000));
+  float noiseSeed = random(10,1000);
+  int seed2 = floor(random(0,10));
   
   void show(float p) // p is in [0,1]
   {
-    // the following two lines are quite experimental, using noise to randomly change the displayed digit in function of p
-    int mult = floor(seed2+700*(0.8*p+0.8*(float)noise.eval(0.8*p,seed)));
-    int digit = (seed2+mult*2017)%10; // modulo 10 to have an integer in [0,9]
+    //////////////////////////////////////////////////
+    // This part is a bit experimental and not great,
+    // just changing the displayed digit in function of p (and putting the result in the variable named "digit")
+    // Not taking the complexity of this into account for the animation difficulty rating.
+    // 
+    // First: floor on an increasing curve in function of p (curve distorted by noise (the experimental part))
+    int curveInteger = floor(600*(p+(float)noise.eval(0.8*p,noiseSeed)));
+    //
+    // Then, offset the curve with a seed of the Digit instance
+    curveInteger += seed2;
+    //
+    // Then, using a formula to get an integer in [0,9] from curveInteger
+    int digit = (curveInteger*7 + 123456) % 10; // modulo 10 to have an integer in [0,9]
+    // *7 modulo 10 maps the integers in [0,9] to other integers in [0,9].
+    // Using also other numbers than 7 for different Digit instances would be better
+    // +123456 to be sure to avoid negative modulo
+    //
+    // I wanted to have a simple animation example with this one,
+    // but it does not seem ideal because of this part
+    //////////////////////////////////////////////////
     
     float alpha = 255*constrain(450*p-0.5,0,1); // alpha fade from small p
+    // (stays a bit at 0 for very small p)
     
     textSize(14);
     fill(255,alpha);
