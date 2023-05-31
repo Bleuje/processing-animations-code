@@ -9,7 +9,7 @@ float t, c;
 void draw() {
 
   if (!recording) {
-    t = mouseX*1.0/width;
+    t = (mouseX*1.3/width)%1;
     c = mouseY*1.0/height;
     if (mousePressed)
       println(c);
@@ -22,6 +22,7 @@ void draw() {
     c = 0;
     for (int sa=0; sa<samplesPerFrame; sa++) {
       t = map(frameCount-1 + sa*shutterAngle/samplesPerFrame, 0, numFrames, 0, 1);
+      t %= 1;
       draw_();
       loadPixels();
       for (int i=0; i<pixels.length; i++) {
@@ -38,10 +39,15 @@ void draw() {
         int(result[i][1]*1.0/samplesPerFrame) << 8 | 
         int(result[i][2]*1.0/samplesPerFrame);
     updatePixels();
-
-    saveFrame("pfr###.png");
+    
+    if (frameCount<=numFrames)
+    {
+      saveFrame("fr###.gif");
+      println(frameCount,"/",numFrames);
+    }
+    
     if (frameCount==numFrames)
-      exit();
+      stop();
   }
 }
 
@@ -55,9 +61,7 @@ float shutterAngle = .75;
 boolean recording = false;
 
 // IDEA : simulation with constant speed field + a repulsive field, then just put this black sphere at a good place and size
-// I initially had in mind to put many spheres
 
-int N = 1; // only one sphere
 int numberOfPaths = 100000;
 int numberOfSimulationSteps = 50;
 float timeStep = 0.3;
@@ -83,6 +87,8 @@ class Center
     point(x,y);
   }
 }
+
+Center repulsionCenter;
 
 class Path
 {
@@ -112,14 +118,14 @@ class Path
   void show()
   {
     strokeWeight(sw);
-    float tt = (t+tOffset)%1;
-    int len = positions.size();
+    float tt = (t+tOffset)%1; // particles don't start at the same time on different paths
+    int arrayLength = positions.size();
     
     // replacement technique on path with numberOfParticlesOnPath particles
     // and linear interpolation between positions recorded during simulation
     for(int i=0;i<numberOfParticlesOnPath;i++)
     {
-      float floatIndex = constrain(map(i+tt,0,numberOfParticlesOnPath,0,len-1-0.01),0,len-1)*0.999999; // mapping from numberOfParticlesOnPath range to recorded positions range
+      float floatIndex = map(i+tt,0,numberOfParticlesOnPath,0,arrayLength-1)*0.999999; // mapping from numberOfParticlesOnPath range to recorded positions range
       // 0.99999 factor to make sure that the index2 below won't go out of array bounds
       
       int index1 = floor(floatIndex);
@@ -127,16 +133,14 @@ class Path
       float interp = floatIndex - floor(floatIndex);
       PVector pos = positions.get(index1).copy().lerp(positions.get(index2),interp);
       
-      float p = constrain(floatIndex/(len-1),0,1); // p in [0,1] indicates the progression on the path
-      float alpha = 255*pow(sin(PI*p),0.25); // more alpha at the center of the path (sin(PI*x) is 0 at x=0 and x=1 and 1 at x=0.5)
+      float p = floatIndex/(arrayLength-1); // p in [0,1] indicates the progression on the path
+      float alpha = 255*pow(constrain(sin(PI*p),0,1),0.25); // more alpha at the center of the path (sin(PI*x) is 0 at x=0 and x=1 and 1 at x=0.5)
       stroke(255,alpha);
 
       point(pos.x,pos.y);
     }
   }
 }
-
-Center[] centersArray = new Center[N];
 
 Path[] pathsArray = new Path[numberOfPaths];
 
@@ -146,23 +150,22 @@ PVector field(float x,float y)
   float repulsionAmount = 20;
   float noiseAmount = 15;
   
-  PVector velocitySum = new PVector(15,-30); // starting with large constant velocity
-  // sums of effect of many spheres, but we only have one here
-  for(int i = 0;i<N;i++)
-  {
-    PVector centerPos = new PVector(centersArray[i].x,centersArray[i].y);
-    PVector vecFromCenterToPos = (new PVector(x,y)).sub(centerPos);
-    float distance = vecFromCenterToPos.mag();
-    vecFromCenterToPos.normalize();
-   
-    float intensity = constrain(map(distance,0,width,1,0),0,1); // mapping of distance to intensity, most intensity when distance is zero
-    intensity = pow(intensity,25)*repulsionAmount; // transforming the curve of intensity in function of distance with pow and amount1
-    // (much larger intensity closer to the center)
-    
-    PVector centerEffect = vecFromCenterToPos.mult(centersArray[i].repulseIntensity*intensity);
-
-    velocitySum.add(centerEffect);
-  }
+  // starting with large constant velocity
+  PVector velocitySum = new PVector(15,-30);
+  
+  // repulstion field...
+  PVector centerPos = new PVector(repulsionCenter.x,repulsionCenter.y);
+  PVector vecFromCenterToPos = (new PVector(x,y)).sub(centerPos);
+  float distance = vecFromCenterToPos.mag();
+  vecFromCenterToPos.normalize(); // vecFromCenterToPos goes from the center position to (x,y) (normalized)
+ 
+  float intensity = constrain(map(distance,0,width,1,0),0,1); // mapping of distance to intensity, most intensity when distance is zero
+  intensity = pow(intensity,25)*repulsionAmount; // transforming the curve of intensity in function of distance with pow and amount1
+  // (much larger intensity closer to the center)
+  
+  PVector centerEffect = vecFromCenterToPos.mult(repulsionCenter.repulseIntensity * intensity);
+  
+  velocitySum.add(centerEffect);
   
   // small layer of noise (velocity field distortion)
   float noiseScale = 0.05;
@@ -187,7 +190,7 @@ void setup()
   result = new int[width*height][3];
   background(0);
   
-  centersArray[0] = new Center(0.5*width,0.4*height,5);
+  repulsionCenter = new Center(0.5*width,0.4*height,5);
   
   for(int i=0;i<numberOfPaths;i++)
   {
@@ -218,17 +221,14 @@ void draw_()
     pathsArray[i].show();
   }
   
-  // draw spheres
-  for(int i=0;i<N;i++)
-  {
-    float sphereRadius = 6.6*centersArray[i].repulseIntensity;
-    push();
-    translate(centersArray[i].x+4,centersArray[i].y-12);
-    fill(0);
-    noStroke();
-    sphere(sphereRadius);
-    pop();
-  }
+  // draw sphere
+  float sphereRadius = 6.6*repulsionCenter.repulseIntensity;
+  push();
+  translate(repulsionCenter.x+4,repulsionCenter.y-12);
+  fill(0);
+  noStroke();
+  sphere(sphereRadius);
+  pop();
   
   pop();
 }
