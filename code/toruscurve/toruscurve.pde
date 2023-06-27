@@ -123,6 +123,11 @@ float R2 = 70;
 
 int turns = 8; // number of spiral turns with the angle with more turns
 
+int numberOfDistortions = 7*turns+turns/2;
+// + turns/2 to make a perfect loop when moving of half the difference between 2 distortions
+// when it's just a multiple of turns (like 7*turns), all distortions stay aligned with the distortion one "turn" later, and we would have to move a full step during loop time
+// (it looks better to have this + turns/2 and half step progession to have more visual variation...)
+
 // Torus surface equation
 PVector torusSurface(float alpha,float theta)
 {
@@ -165,8 +170,8 @@ PVector easedParam(float p)
 {
   float dontChange = pow(c01(sin(PI*((p-t/turns+1)%1))),2.5); // parameter to have much less distortione in the area in the center
   
-  float F = 7*turns+turns/2;
-  float q = (F*p+0.5*t); // map p to a larger range (a range on indices), and have it increase by half an index with a loop duration
+  float q = (numberOfDistortions*p+0.5*t); // map p to a larger range (a range on indices), and have it increase by half an index with a loop duration
+  // (loops perfectly thanks to + turns/2 in numberOfDistortions definition)
   
   int index = floor(q);
   float frc = q-index; // fractional part of q
@@ -174,10 +179,10 @@ PVector easedParam(float p)
   frc = lerp(frc,frc2,0.43); // another mix to control the easing curve
   float q2 = index+frc; // modfied q with easing
   
-  return new PVector((q2-0.5*t)/F,frc); // first argument is the distorted p, the second one frc in [0,1] is returned to remember where we are comapred to distortion
-  // (q2-0.5*t)/F : the previous + 0.5*t has useful to translate the fractional part of q, so translate the easing
+  return new PVector((q2-0.5*t)/numberOfDistortions,frc); // first argument is the distorted p, the second one frc in [0,1] is returned to remember where we are comapred to distortion
+  // (q2-0.5*t)/numberOfDistortions : the previous + 0.5*t was useful to translate the fractional part of q, so translate the easing
   // now we remove that 0.5*t to come back to a p "at the same location"
-  // division by F to come back to the range of p
+  // division by numberOfDistortions to come back to the range of p
 }
 
 // surface around the main curve
@@ -269,8 +274,6 @@ void drawParticles()
   strokeWeight(1.0);
   fill(0);
   
-  int mParts = 7*turns+4; // number of distortions, or the number of groups
-  
   float mParticles = 4; // number of trails per group
   
   int nTrail = 40; // number of particles on one trail
@@ -278,13 +281,13 @@ void drawParticles()
   for(int k=0;k<nTrail;k++)
   {
     float pk = map(k,0,nTrail,1,0);
-    for(int i=0;i<mParts;i++)
+    for(int i=0;i<numberOfDistortions;i++)
     {
-      float p = 1.0*i/mParts;
+      float p = 1.0*i/numberOfDistortions;
       for(int j=0;j<mParticles;j++)
       {
         float theta = 1.0*(j+(i%2==0?0:0.5))/mParticles*TWO_PI-5*t*TWO_PI/mParticles-4.7*pk;
-        float p2 = p-0.5*t/mParts-0.5/mParts+0.007*(0.6-pk);
+        float p2 = p-0.5*t/numberOfDistortions-0.5/numberOfDistortions+0.007*(0.6-pk);
         PVector v = curveSurface(p2,theta,7.0); // d=7.0 pixels away from surface
         
         push();
