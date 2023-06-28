@@ -18,7 +18,7 @@ Here are the links to the source codes of some of my animations. For more contex
 | [**2D fractal sliding squares** **\***](https://github.com/Bleuje/processing-animations-code/blob/main/code/fractalsliding2d/fractalsliding2d.pde) | [view](https://bleuje.com/gifanimationsite/single/2dfractalslidingsquares/) | 2023 | ● ● ● (6) | recursion, fractal zoom, tree structure |
 | [**spiral magic**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralmagic/spiralmagic.pde) | [view](https://bleuje.com/gifanimationsite/single/spiralmagic/) | 2021 | ● ● ● (6) | camera projection trick, spiral |
 | [**permutation patterns propagation**](https://github.com/Bleuje/processing-animations-code/blob/main/code/permutationpatternspropagation/permutationpatternspropagation.pde) | [view](https://bleuje.com/gifanimationsite/single/permutationpatternspropagation/) | 2021 | ● ● ● ◐ (7) | simulation, permutation patterns |
-| [**torus curve**](https://github.com/Bleuje/processing-animations-code/blob/main/code/toruscurve/toruscurve.pde) | [view](https://bleuje.com/gifanimationsite/single/toruscurve/) | 2023 | ● ● ● ● (8) | 3D geometry, mesh |
+| [**torus curve**](https://github.com/Bleuje/processing-animations-code/blob/main/code/toruscurve/toruscurve.pde) | [view](https://bleuje.com/gifanimationsite/single/toruscurve/) | 2023 | ● ● ● ◐ (7) | 3D geometry, mesh |
 
 \* Collaboration with Yann Le Gall
 
