@@ -4,7 +4,7 @@
 // View the rendered result at: https://bleuje.com/gifanimationsite/single/toruscurve/
 
 // slow to render/show
-// the distortion effect makes it a lot more dificult to understand completely
+// I think the distortion effect makes it a lot more difficult to understand completely
 // unfinished commenting
 
 int[][] result;
@@ -164,8 +164,8 @@ Coordinates curve(float p)
 }
 
 // distortion effect on the curve parametrization
-// this is super tricky and really hard to get back into understanding it
-// the surface equation defined next includes this distortion
+// this is quite tricky
+// the surface equation defined next includes this parameter distortion
 PVector easedParam(float p)
 {
   float dontChange = pow(c01(sin(PI*((p-t/turns+1)%1))),2.5); // parameter to have much less distortione in the area in the center
@@ -175,14 +175,22 @@ PVector easedParam(float p)
   
   int index = floor(q);
   float frc = q-index; // fractional part of q
-  float frc2 = lerp(frc,ease(frc,lerp(4.7,1.2,dontChange)),0.65); // less easing when dontChange increases, inside a lerp to ahve a mix with no easing
+  float easedFrc = ease(frc,lerp(4.7,1.2,dontChange)); // the distortion, variable intensity in function of dontChange
+  float frc2 = lerp(frc,easedFrc,0.65); // less distortion when dontChange increases, inside a lerp to have a mix with no easing
   frc = lerp(frc,frc2,0.43); // another mix to control the easing curve
   float q2 = index+frc; // modfied q with easing
   
-  return new PVector((q2-0.5*t)/numberOfDistortions,frc); // first argument is the distorted p, the second one frc in [0,1] is returned to remember where we are comapred to distortion
-  // (q2-0.5*t)/numberOfDistortions : the previous + 0.5*t was useful to translate the fractional part of q, so translate the easing
+  // coming back to a new p
+  float distortedP = (q2-0.5*t)/numberOfDistortions;
+  // the previous + 0.5*t was useful to translate the fractional part of q, so translate the easing
   // now we remove that 0.5*t to come back to a p "at the same location"
   // division by numberOfDistortions to come back to the range of p
+  
+  
+  float locationRelativeToDistortions = frc; // in [0,1] to remember where we are compared to distortions
+  // useful later so also returned by the function
+  
+  return new PVector(distortedP,locationRelativeToDistortions);
 }
 
 // surface around the main curve
