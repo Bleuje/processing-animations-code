@@ -41,17 +41,17 @@ void draw() {
         int(result[i][2]*1.0/samplesPerFrame);
     updatePixels();
 
-    saveFrame("fr###.png");
+    saveFrame("fr###.gif");
     println(frameCount,"/",numFrames);
     if (frameCount==numFrames)
-      exit();
+      stop();
   }
 }
 
 //////////////////////////////////////////////////////////////////////////////
 
 int samplesPerFrame = 3;
-int numFrames = 75;        
+int numFrames = 93;        
 float shutterAngle = .6;
 
 boolean recording = false;
@@ -63,21 +63,21 @@ OpenSimplexNoise noise;
 int n = 75; // number of white dots
 int numberOfDotsOnCurve = 100; // connection drawing quality
 float noiseLoopRadius = 0.2; // noise circle radius
-float globalDelayFactor = 6.0; // delay effect parameter
+float globalDelayFactor = 4.2; // delay effect parameter
 float swmax = 1.7; // maximum stroke weight
 float D = 150; // global displacement intensity factor
 
 class Dot
 {
   // polar coordinates
-  float r = pow(random(1),0.14)*0.3*width; // radius random distribution to have less dots near the center
+  float r = pow(random(1),0.2)*0.3*width; // radius random distribution to have less dots near the center
   float theta = random(TWO_PI);
   
   // position without displacement
   float x0 = r*cos(theta);
   float y0 = r*sin(theta);
   
-  float displacementFactor = map(dist(x0,y0,0,0),0,0.3*width,4,0);
+  float displacementFactor = map(dist(x0,y0,0,0),0,0.3*width,3.4,0);
   // (more movement for the dots nearer the center)
   
   float seed = random(10,1000);
