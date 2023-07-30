@@ -29,7 +29,7 @@ Most animations rely a lot on delay/offset techniques (something normal when tim
 
 Please note that these ratings are highly subjective and are intended to serve as a rough guide for navigating the collection. While it's not ideal, they offer some insight into the complexity of understanding the code.
 
-To give an idea, ● (2) means suitable for beginners (but not super beginner-friendly), ● ● ● ◐ (7) means rather challenging to fully understand even for advanced coders.
+To give an idea, ● (2) means suitable for beginners (but not super beginner-friendly), ● ● ● ◐ (7) means it's rather challenging  or rather time consuming to understand all details for advanced coders.
 
 ---
 
