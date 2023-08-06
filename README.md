@@ -34,6 +34,7 @@ To give an idea, ● (2) means suitable for beginners (but not super beginner-fr
 ---
 
 # Motivation and information
+<sup>(lengthy text written with the help of chat gpt...)</sup>
 
 During my early months exploring animations with [Processing](https://processing.org/), I stumbled upon the source code of some captivating gifs created by [beesandbombs (Dave)](https://beesandbombs.com/). Although I only examined a fraction of his [code examples](https://gist.github.com/beesandbombs), I made the effort to comprehend them as much as possible. This experience significantly influenced my skills – I discovered new techniques, had some enigmas unraveled, improved my mathematical approach, and improved my workflow. I even adopted Dave's motion blur template.
 
