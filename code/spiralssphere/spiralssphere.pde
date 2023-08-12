@@ -119,12 +119,16 @@ float currentSphereSpiralPosition; // evolving global variable, in [0,1]
 
 
 // Idea / notations :
-// We have a theoretical repetition of small spirals on an infinite straight x-axis,
+// We have a theoretical infinite repetition of small spirals on an infinite straight x-axis,
 // with each small spiral indexed by an integer k.
 // We distort and bound this axis to [-1,1] with the tanh function.
 // When we're at a position p in [-1,1] in the distortion,
 // we'll have to look for which x (and k) values it corresponds to.
 // Later we'll draw this along the 3D sphere curve.
+
+// Saying "small spirals" as opposed to the sphere curve that also looks like a kind of spiral.
+
+// A lot of complicated details were added to get exactly what I wanted to have
 
 
 // Function to map an index to a position on and x-axis,
@@ -293,7 +297,9 @@ Coordinates myCurve(float q,float sphereCurveChangeParameter)
   return coords;
 }
 
-// fullSphereSpiralParameter in [0,1]
+// Function to get 3D positions of the entire 3D curve with small spirals,
+// in function of the position parameter fullSphereSpiralParameter in [0,1]  and other parameters.
+// Putting the 2D small spirals on the sphere curve.
 PVector spiralsCurve(float fullSphereSpiralParameter,float sphereCurveChangeParameter,float numberOfTurnsFactor,float xShift,float heightFactor)
 {
   float q;
