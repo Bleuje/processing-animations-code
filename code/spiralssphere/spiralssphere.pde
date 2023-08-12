@@ -149,7 +149,7 @@ float tanhInv(float p)
 // (with the tanh distortion)
 int KFromP(float p,float xShift)
 {
-  float x = tanhInv(p); // this is the x position on infinite x-axis after dreversing tanh distortion
+  float x = tanhInv(p); // this is the x position on infinite x-axis after reversing the tanh distortion
   int k = floor(x/numberOfSpiralsFactor - xShift); // index k from x
   return k; 
 }
@@ -177,7 +177,7 @@ PVector smallSpiralPattern(float q,float numberOfTurns,float rad)
   }
 }
 
-// p in [-1,1] is a position on big curve with -1 and 1 at the two poles
+// p in [-1,1] is a position on the sphere curve with -1 and 1 at the two poles
 // we look for 2D positions of small spirals along a straight axis,
 // putting this on the 3D sphere curve will be done later
 PVector spiralPatternFromP(float p,float xShift,float numberOfTurnsFactor)
@@ -278,10 +278,10 @@ class Coordinates
     }
 }
 
-// Now we don't want just the position on big plain curve
+// Now we don't want just the position on plain sphere curve
 // but also get the smooth turning basis on that curve
 // to orient the drawing of small spirals later
-Coordinates myCurve(float q,float sphereCurveChangeParameter)
+Coordinates curveCoordinates(float q,float sphereCurveChangeParameter)
 {
   PVector pos = curvePath(q,sphereCurveChangeParameter);
   PVector pos2 = curvePath(q+0.005,sphereCurveChangeParameter);
@@ -326,7 +326,7 @@ PVector spiralsCurve(float fullSphereSpiralParameter,float sphereCurveChangePara
     q = map(v_2D.x, -1, 1, 0.5, 1.0);
   }
   
-  Coordinates coords = myCurve(q,sphereCurveChangeParameter); // get position and basis on big curve at q
+  Coordinates coords = curveCoordinates(q,sphereCurveChangeParameter); // get position and basis on big curve at q
   
   float flatEndingFactor = ease(map(t,0.9,0.975,1,0,true), 1.7); // maybe some kind of perfectionnism, it's factor that goes from 1 to zero from t=0.9 to t=0.975
   
@@ -341,7 +341,7 @@ PVector spiralsCurve(float fullSphereSpiralParameter,float sphereCurveChangePara
 }
 
 // Without projection on sphere,
-// the small spirals are drawn on a parallel plane to the sphere
+// the small spirals would be drawn on a parallel plane to the sphere
 PVector projectOnSphere(PVector v)
 {
   return v.mult(SphereRadius/v.mag());
