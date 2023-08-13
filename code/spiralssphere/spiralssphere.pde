@@ -139,17 +139,17 @@ float xFromK(int k,float xShift)
 }
 
 // inverse function of tanh, used in next function
-float tanhInv(float p)
+float tanhInverse(float p)
 {
   return 0.5 * (log(1+p)-log(1-p));
 }
 
-// We're at a position p in [-1,1] on the big curve, where -1 and 1 are at sphere poles,
+// We're at a position p in [-1,1] on the plain sphere curve, where -1 and 1 are at sphere poles,
 // this function is used to get the index k of the small spiral we're on for this p
 // (with the tanh distortion)
 int KFromP(float p,float xShift)
 {
-  float x = tanhInv(p); // this is the x position on infinite x-axis after reversing the tanh distortion
+  float x = tanhInverse(p); // this is the x position on infinite x-axis after reversing the tanh distortion
   int k = floor(x/numberOfSpiralsFactor - xShift); // index k from x
   return k; 
 }
@@ -327,7 +327,7 @@ PVector spiralsCurve(float fullSphereSpiralParameter,float sphereCurveChangePara
     q = map(v_2D.x, -1, 1, 0.5, 1.0);
   }
   
-  Coordinates coords = curveCoordinates(q,sphereCurveChangeParameter); // get position and basis on big curve at q
+  Coordinates coords = curveCoordinates(q,sphereCurveChangeParameter); // get position and basis on plain sphere curve at q
   
   float flatEndingFactor = ease(map(t,0.9,0.975,1,0,true), 1.7); // maybe some kind of perfectionnism, it's factor that goes from 1 to zero from t=0.9 to t=0.975
   
