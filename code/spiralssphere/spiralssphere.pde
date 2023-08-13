@@ -132,7 +132,7 @@ float currentSphereSpiralPosition; // evolving global variable, in [0,1]
 
 
 // Function to map an index to a position on and x-axis,
-// also possibility to shift this position with the parameter alpha
+// also possibility to shift this position with the parameter xShift
 float xFromK(int k,float xShift)
 {
   return (k + xShift) * numberOfSpiralsFactor;
@@ -233,7 +233,7 @@ PVector rotY(PVector v,float theta)
   return new PVector(x,v.y,z);
 }
 
-// Big plain sphere curve equations
+// Equations of plain sphere curve
 PVector curvePath(float q,float s) {
     PVector v  = new PVector(0, -1, 0);
     v.rotate(TAU*q);
