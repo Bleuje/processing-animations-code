@@ -234,6 +234,7 @@ PVector rotY(PVector v,float theta)
 }
 
 // Equations of plain sphere curve
+// courtesy of jn3008 / @jn3008 / "Jo"
 PVector curvePath(float q,float s) {
     PVector v  = new PVector(0, -1, 0);
     v.rotate(TAU*q);
