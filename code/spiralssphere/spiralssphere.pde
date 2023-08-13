@@ -191,11 +191,11 @@ PVector spiralPatternFromP(float p,float xShift,float numberOfTurnsFactor)
   
   // effect that has the moving variation of turns every other small spiral...
   float turnsSwitchIntensity = 0.5 * ease(map(t, 0.42, 0.94, 1, 0.6, true), 1.3);
-  float every2OtherSpiralTimeOffset = 0.5 * (k1%2);
+  float everyOtherSpiralTimeOffset = 0.5 * (k1%2);
   float turnsSwitchSpeed = 2.6 * pow(mp01(t, 0.2, 1), 2.6);
   
   float alternatingNumberOfTurnsFactor =
-            turnsSwitchIntensity * cos(TAU * (turnsSwitchSpeed + every2OtherSpiralTimeOffset));
+            turnsSwitchIntensity * cos(TAU * (turnsSwitchSpeed + everyOtherSpiralTimeOffset));
   
   float numberOfTurnsFactor2 =  1.15 + alternatingNumberOfTurnsFactor;
   
