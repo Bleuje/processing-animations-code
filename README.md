@@ -21,9 +21,10 @@ Here are the links to the source codes of some of my animations. For more contex
 | [**torus curve**](https://github.com/Bleuje/processing-animations-code/blob/main/code/toruscurve/toruscurve.pde) | [view](https://bleuje.com/gifanimationsite/single/toruscurve/) | 2023 | 3D geometry, mesh |
 | [**spirals sphere**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralssphere/spiralssphere.pde) | [view](https://bleuje.com/gifanimationsite/single/spiralssphere/) | 2023 | spirals, tanh |
 
-\* Collaboration with Yann Le Gall
 
 I tried to sort the list from simpler to more complex or time-consuming to fully understand, but this is highly subjective.
+
+<sub>\* Collaboration with Yann Le Gall</sub>
 
 ---
 
