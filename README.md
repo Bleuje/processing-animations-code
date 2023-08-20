@@ -29,19 +29,14 @@ I tried to sort the list from simpler to more complex or time-consuming to fully
 ---
 
 # Motivation and information
-<sup>(lengthy text written with the help of chat gpt...)</sup>
 
-During my early months exploring animations with [Processing](https://processing.org/), I stumbled upon the source code of some captivating gifs created by [beesandbombs (Dave)](https://beesandbombs.com/). Although I only examined a fraction of his [code examples](https://gist.github.com/beesandbombs), I made the effort to comprehend them as much as possible. This experience significantly influenced my skills – I discovered new techniques, had some enigmas unraveled, improved my mathematical approach, and improved my workflow. I even adopted Dave's motion blur template.
+In my early animation experiences with [Processing](https://processing.org/), I came accross captivating gifs by [beesandbombs (Dave)](https://beesandbombs.com/). Studying even a fraction of the [code he has shared](https://gist.github.com/beesandbombs) greatly enhanced my skills and approach. Over time, I've shared quite raw source codes from my animations, valuing visual outcome over code aesthetics. But with positive feedback and people asking me how the animations are made, I see value in sharing the code with more care.
 
-Over the years, I've shared numerous source codes from my animations. However, I often presented these codes in their raw form, as they appeared once I completed each animation. This approach allowed me to genuinely reveal my work with minimal effort while also showcasing the mathematical concepts behind them. My primary focus was always on the visual outcome, rather than perfecting the code's aesthetics.
+This project compiles noteworthy animation source codes, aiming for clarity through commented code. It's a work in progress, aiming to surpass my previous releases despite the imperfections.
 
-With the support and encouragement I've received, I believe that sharing my animation creation process might hold value for others. I do not claim that my code is ideally suited for educational purposes, but I believe that, by refining it, others could potentially gain knowledge and improve their skills from studying my work – similar to my own experience with beesandbombs.
+For newcomers or those seeking context, I recommend [**tutorials on my website**](https://bleuje.com/tutorials/) on my website, especially the "[Replacement Technique](https://bleuje.com/tutorial4/)" and the one about beesandbombs' [motion blur template](https://bleuje.com/tutorial6/).
 
-The aim of this project is to compile a selection of animation source codes that I find noteworthy, while enhancing and clarifying them through clearer, commented code. As I continue to add new examples and refine existing ones, this project should be a permanent work in progress. Although the code has imperfections, I hope it represents a meaningful improvement over my previously shared work.
-
-To better understand the examples, those new to creative coding or looking for additional context might find it helpful to first explore the [**tutorials on my website**](https://bleuje.com/tutorials/). In particular, the "[Replacement Technique](https://bleuje.com/tutorial4/)" and the tutorial about beesandbombs' [motion blur template](https://bleuje.com/tutorial6/) provide context and foundational knowledge. 
-
-I hope that this collection of animation source code might serve as a valuable resource for those interested in delving deeper into the world of Processing-based animations, whether for educational purposes or simply to satisfy their curiosity. I hope that my work could inspire and support others on their creative journeys, just as beesandbombs' work has done for me.
+I hope this collection serves both those diving into Processing-based animations and the simply curious, potentially inspiring others just as beesandbombs inspired me.
 
 ## Acknowledgments and Licensing
 
