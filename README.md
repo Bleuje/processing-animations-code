@@ -44,6 +44,6 @@ I hope that this collection of animation source code might serve as a valuable r
 
 ## Acknowledgments and Licensing
 
-This repository includes animations that utilize a [motion blur template](https://bleuje.com/tutorial6/) created by Dave. I have permission from him to use this template in my work.
+This repository includes animations that utilize a [motion blur template](https://bleuje.com/tutorial6/) created by Dave. We have permission from him to use this template in our work.
 
 Please note that while the motion blur template is available for use, the rest of the source code in this repository is generally protected under my copyright, and all rights are reserved. If you wish to use any part of my source code for your own projects or any other purpose, please contact me to obtain permission.
