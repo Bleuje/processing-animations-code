@@ -34,7 +34,7 @@ In my early animation experiences with [Processing](https://processing.org/), I 
 
 This project compiles noteworthy animation source codes, aiming for clarity through commented code. It's a work in progress, aiming to surpass my previous releases despite the imperfections.
 
-For newcomers or those seeking context, I recommend [**tutorials on my website**](https://bleuje.com/tutorials/) on my website, especially the "[Replacement Technique](https://bleuje.com/tutorial4/)" and the one about beesandbombs' [motion blur template](https://bleuje.com/tutorial6/).
+For newcomers or those seeking context, I recommend [**tutorials**](https://bleuje.com/tutorials/) on my website, especially the "[Replacement Technique](https://bleuje.com/tutorial4/)" and the one about beesandbombs' [motion blur template](https://bleuje.com/tutorial6/).
 
 I hope this collection serves both those diving into Processing-based animations and the simply curious, potentially inspiring others just as beesandbombs inspired me.
 
