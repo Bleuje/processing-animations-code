@@ -43,7 +43,7 @@ Over the years, I've shared numerous source codes from my animations. However, I
 
 With the support and encouragement I've received, I believe that sharing my animation creation process might hold value for others. I do not claim that my code is ideally suited for educational purposes, but I believe that, by refining it, others could potentially gain knowledge and improve their skills from studying my work – similar to my own experience with beesandbombs.
 
-The aim of this project is to compile a selection of animation source codes that I find noteworthy, while enhancing and clarifying them through clearer, commented code. As I continue to add new examples and refine existing ones, this project should be a permanent work in progress. Although the code may has imperfections, I hope it represents a meaningful improvement over my previously shared work.
+The aim of this project is to compile a selection of animation source codes that I find noteworthy, while enhancing and clarifying them through clearer, commented code. As I continue to add new examples and refine existing ones, this project should be a permanent work in progress. Although the code has imperfections, I hope it represents a meaningful improvement over my previously shared work.
 
 To better understand the examples, those new to creative coding or looking for additional context might find it helpful to first explore the [**tutorials on my website**](https://bleuje.com/tutorials/). In particular, the "[Replacement Technique](https://bleuje.com/tutorial4/)" and the tutorial about beesandbombs' [motion blur template](https://bleuje.com/tutorial6/) provide context and foundational knowledge. 
 
