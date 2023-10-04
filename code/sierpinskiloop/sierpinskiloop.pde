@@ -1,7 +1,7 @@
 // Processing code by Etienne JACOB
 // motion blur template by beesandbombs, explanation/article: https://bleuje.com/tutorial6/
 // See the license information at the end of this file.
-// View the rendered result at: https://twitter.com/etiennejcb/status/1367173073250758661
+// View the rendered result at: https://bleuje.com/gifanimationsite/single/sierpinskiloop/
 
 //////////////////////////////////////////////////////////////////////////////
 // Start of template
@@ -82,6 +82,7 @@ float R = 300; // size of drawing
 void setup(){
   size(600,600,P3D);
   result = new int[width*height][3];
+  smooth(8);
 }
 
 // v1,v2,v3 are the vertices of a current triangle to draw, this function is recursive
