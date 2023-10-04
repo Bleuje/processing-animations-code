@@ -17,9 +17,11 @@ Once the particle paths are computed, [replacement technique](https://bleuje.com
 
 A black sphere is then simply drawn, its position and size ahve been adjusted experimentally.
 
-### info and links
+### more information and links
 
 Year: 2017
+
+On bleuje site: https://bleuje.com/gifanimationsite/single/fluidsphereobstacle/
 
 On social media:
  - tumblr: https://necessary-disorder.tumblr.com/post/164452980553
