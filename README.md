@@ -6,7 +6,7 @@ Here are the links to the source codes of some of my animations. For more contex
 | Code link | Result | Year | Some used techniques |
 |-------------|--------|------|--------------------|
 | [**scattered dots**](https://github.com/Bleuje/processing-animations-code/blob/main/code/scattereddots/scattereddots.pde) | [view](https://bleuje.com/gifanimationsite/single/scattereddots/) | 2018 | replacement technique, simulation |
-| [**Sierpinski triangle loop**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop/sierpinskiloop.pde) | [view](https://twitter.com/etiennejcb/status/1367173073250758661) | 2017/2021 | recursion, chromatic abberation |
+| [**Sierpinski triangle loop**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop/sierpinskiloop.pde) | [view](https://bleuje.com/gifanimationsite/single/sierpinskiloop/) | 2017/2021 | recursion, chromatic abberation |
 | [**sun connections**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sunconnections/sunconnections.pde) | [view](https://bleuje.com/gifanimationsite/single/sunconnections/) | 2018 | interpolation with delay, noise loop |
 | [**spiral wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralwave/spiralwave.pde) | [view](https://bleuje.com/gifanimationsite/single/spiralwave/) | 2021 | replacement technique, mesh, spiral wave |
 | [**fluid sphere obstacle**](https://github.com/Bleuje/processing-animations-code/blob/main/code/fluidsphereobstacle/fluidsphereobstacle.pde) | [view](https://bleuje.com/gifanimationsite/single/fluidsphereobstacle/) | 2017 | simulation, replacement technique |
@@ -22,7 +22,7 @@ Here are the links to the source codes of some of my animations. For more contex
 | [**spirals sphere**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralssphere/spiralssphere.pde) | [view](https://bleuje.com/gifanimationsite/single/spiralssphere/) | 2023 | spirals, tanh |
 
 
-I tried to sort the list from simpler to more complex or time-consuming to fully understand, but this is highly subjective.
+I'm trying to sort the list from simpler to more complex or time-consuming to fully understand, but this is highly subjective.
 
 <sub>\* Collaboration with Yann Le Gall</sub>
 
