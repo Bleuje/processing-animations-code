@@ -13,7 +13,7 @@ The flow field is defined by the sum of:
 - a repulsive field (might be the most technical part of the code)
 - some perlin noise
 
-Once the particle paths are computed, [replacement technique](https://bleuje.com/tutorial4/) is used to show particles following them.
+Once the particle paths are computed, [replacement technique](https://bleuje.com/tutorial4/) is used to show particles following them. It's also using interpolation between computed positions of the simulation [(tutorial)](https://bleuje.com/tutorial7/).
 
 A black sphere is then simply drawn, its position and size ahve been adjusted experimentally.
 
