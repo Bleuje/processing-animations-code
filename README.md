@@ -22,7 +22,9 @@ Here are the links to the source codes of some of my animations. For more contex
 | [**spirals sphere**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralssphere/) | 🚧 | 2023 | spirals, tanh |
 
 
-I'm trying to sort the list from simpler to more complex or time-consuming to fully understand, but this is highly subjective. This set of animations is [watchable on my site here](https://bleuje.com/gifanimationsite/single/spiralssphere/) using the bottom arrows/links to navigate.
+I'm trying to sort the list from simpler to more complex or time-consuming to fully understand, but this is highly subjective.
+
+This set of animations is [watchable on my site here](https://bleuje.com/gifanimationsite/single/spiralssphere/) using the bottom arrows/links to navigate.
 
 Unfortunately I had to give them some kind of names, which is something I don't really like.
 
