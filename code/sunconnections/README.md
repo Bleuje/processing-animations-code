@@ -11,7 +11,7 @@ First there is a set of points, with different random parameters. Each point mov
 So the formulas to get the points' position loops are basically like this:
 
 - x = x0 + L\*noise(seed + r\*cos(t), r\*sin(t))
-- y = y0 + L\*noise(2\**seed + r\*cos(t), r\*sin(t))
+- y = y0 + L\*noise(2\*seed + r\*cos(t), r\*sin(t))
 
 The random (x0,y0) position using formulas so that it's distributed to have this sphere like shape, though this is done in 2D. L is a parameter for how large the movement is, and r how much we have varation with noise.
 
