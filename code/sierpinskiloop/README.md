@@ -26,4 +26,4 @@ On bleuje site: https://bleuje.com/gifanimationsite/single/sierpinskiloop/
 
 On social media:
  - tumblr: https://necessary-disorder.tumblr.com/post/157349897888
- - twitter: (TODO: find link)
+ - twitter: https://twitter.com/etiennejcb/status/1367173073250758661

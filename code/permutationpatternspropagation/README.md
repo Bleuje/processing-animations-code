@@ -16,4 +16,4 @@ On bleuje site: https://bleuje.com/gifanimationsite/single/permutationpatternspr
 
 On social media:
  - tumblr: https://necessary-disorder.tumblr.com/post/656611026798772224
- - twitter: (TODO: find link)
+ - twitter: https://twitter.com/etiennejcb/status/1655991294940807208

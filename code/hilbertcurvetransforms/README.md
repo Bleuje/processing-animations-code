@@ -16,4 +16,4 @@ On bleuje site: https://bleuje.com/gifanimationsite/single/hilbertcurvetransform
 
 On social media:
  - tumblr: https://necessary-disorder.tumblr.com/post/684049569049395200
- - twitter: (TODO: find link)
+ - twitter: https://twitter.com/etiennejcb/status/1524499671556796416

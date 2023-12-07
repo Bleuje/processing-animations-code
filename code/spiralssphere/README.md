@@ -16,4 +16,4 @@ On bleuje site: https://bleuje.com/gifanimationsite/single/spiralssphere/
 
 On social media:
  - tumblr: https://necessary-disorder.tumblr.com/post/718402751221170176
- - twitter: (TODO: find link)
+ - twitter: https://twitter.com/etiennejcb/status/1662141549348810753

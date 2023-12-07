@@ -16,4 +16,4 @@ On bleuje site: https://bleuje.com/gifanimationsite/single/toruscurve/
 
 On social media:
  - tumblr: https://necessary-disorder.tumblr.com/post/707155618126020608
- - twitter: (TODO: find link)
+ - twitter: https://twitter.com/etiennejcb/status/1616885159327825921

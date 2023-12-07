@@ -16,4 +16,4 @@ On bleuje site: https://bleuje.com/gifanimationsite/single/2dfractalslidingsquar
 
 On social media:
  - tumblr: https://necessary-disorder.tumblr.com/post/714960118674030592/work-for-a-collaboration-with-yann-le-gall-for
- - twitter: (TODO: find link)
+ - twitter: https://twitter.com/etiennejcb/status/1646946633085493269

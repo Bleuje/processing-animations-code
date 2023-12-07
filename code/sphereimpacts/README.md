@@ -16,4 +16,4 @@ On bleuje site: https://bleuje.com/gifanimationsite/single/sphereimpacts/
 
 On social media:
  - tumblr: https://necessary-disorder.tumblr.com/post/667668153745195008
- - twitter: (TODO: find link)
+ - twitter: https://twitter.com/etiennejcb/status/1458831084876144641

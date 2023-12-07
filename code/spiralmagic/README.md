@@ -16,4 +16,4 @@ On bleuje site: https://bleuje.com/gifanimationsite/single/spiralmagic/
 
 On social media:
  - tumblr: https://necessary-disorder.tumblr.com/post/645014025639526400
- - twitter: (TODO: find link)
+ - twitter: https://twitter.com/etiennejcb/status/1367592930471469057

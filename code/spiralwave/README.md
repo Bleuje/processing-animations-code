@@ -48,4 +48,4 @@ On bleuje site: https://bleuje.com/gifanimationsite/single/spiralwave/
 
 On social media:
  - tumblr: https://necessary-disorder.tumblr.com/post/651898885464326144
- - twitter: (TODO: find link)
+ - twitter: https://twitter.com/etiennejcb/status/1470031412711641094

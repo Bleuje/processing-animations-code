@@ -16,4 +16,4 @@ On bleuje site: https://bleuje.com/gifanimationsite/single/spherewave/
 
 On social media:
  - tumblr: https://necessary-disorder.tumblr.com/post/686420135511310336
- - twitter: (TODO: find link)
+ - twitter: https://twitter.com/etiennejcb/status/1609340724515901442
