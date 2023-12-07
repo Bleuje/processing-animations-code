@@ -6,7 +6,7 @@
 
 ### comments
 
-We have a set of block instances, 3D because of different angle, radius position and height. There are a lot more blocks drawn than the number of instances, because of replacement technique (the radius position of the blocks change).
+We have a set of block instances, 3D array because of different angle, radius position and height. There are a lot more blocks drawn than the number of instances, because of replacement technique (the radius position of the blocks change).
 
 The fall of the blocks is controlled by formulas for the delay/offset of the falls. This formula mostly uses noise based on angle, and block height.
 
