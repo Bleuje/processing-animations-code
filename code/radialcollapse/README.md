@@ -17,7 +17,9 @@ The most technical thing in the code, in my opinion, is to define the radius to 
 - r1 = pow(RATIO,p)\*pow(1/RATIO,1.0\*i/N)*R;
 - r2 = pow(RATIO,p)\*pow(1/RATIO,1.0\*(i+1)/N)*R;
 
-Where i is the "radius index" of the block (0, 1 or 2), and N the number of radius indices (3). You can check that when p increases by 1, r1, r2 and r2-r1 are multiplied by RATIO=0.8. pow(1/RATIO,1.0*i/N) is about changing the radius depending on radius index i.
+Where i is the "radius index" of the block (0, 1 or 2), and N the number of radius indices (3). You can check that when p increases by 1, r1, r2 and r2-r1 are multiplied by RATIO=0.8.
+
+pow(1/RATIO,1.0*i/N) is about changing the radius depending on radius index i.
 
 Now that we can draw the evolution of a block with parameter p, we can use the [replacement technique (with 3D grid)](https://bleuje.com/tutorial5/) to fill everything and have a perfect loop.
 
