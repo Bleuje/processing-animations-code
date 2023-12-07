@@ -225,9 +225,9 @@ void draw_()
   }
   
   // draw sphere
-  float sphereRadius = 6.6*repulsionCenter.repulseIntensity;
+  float sphereRadius = 6.6*repulsionCenter.repulseIntensity; // experimental sphere size adjustement
   push();
-  translate(repulsionCenter.x+4,repulsionCenter.y-12);
+  translate(repulsionCenter.x+4,repulsionCenter.y-12); // experimental sphere position adjustement
   fill(0);
   noStroke();
   sphere(sphereRadius);
