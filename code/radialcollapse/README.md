@@ -21,7 +21,7 @@ Where i is the "radius index" of the block (0, 1 or 2), and N the number of radi
 
 pow(1/RATIO,1.0*i/N) is about changing the radius depending on radius index i.
 
-Now that we can draw the evolution of a block with parameter p, we can use the [replacement technique (with 3D grid)](https://bleuje.com/tutorial5/) to fill everything and have a perfect loop.
+After we can draw the evolution of a block with parameter p, we can use the [replacement technique (with 3D grid)](https://bleuje.com/tutorial5/) to fill everything and have a perfect loop.
 
 ### more information and links
 
