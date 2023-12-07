@@ -30,7 +30,7 @@ I'm trying to sort the list from simpler to more complex or time-consuming to fu
 
 ## Motivation and information
 
-In my early animation experiences with [Processing](https://processing.org/), I came accross captivating gifs by [beesandbombs (Dave)](https://beesandbombs.com/). Studying even a fraction of the [code he has shared](https://gist.github.com/beesandbombs) greatly enhanced my skills and approach. Over time, I've shared quite raw source codes from my animations, valuing visual outcome over code aesthetics. But with positive feedback and people asking me how the animations are made, I see value in sharing the code with more care.
+In my early animation experiences with [Processing](https://processing.org/), I came across captivating gifs by [beesandbombs (Dave)](https://beesandbombs.com/). Studying even a fraction of the [code he has shared](https://gist.github.com/beesandbombs) greatly enhanced my skills and approach. Over time, I've shared quite raw source codes from my animations, valuing visual outcome over code aesthetics. But with positive feedback and people asking me how the animations are made, I see value in sharing the code with more care.
 
 This project compiles noteworthy animation source codes, aiming for clarity through commented code. It's a work in progress, aiming to surpass my previous releases despite the imperfections.
 
