@@ -1,28 +1,30 @@
 # Processing animations source code list
 
-Here are the links to the source codes of some of my animations. For more context and insights about this project, please read the text below.
+Here are the links to the source codes of some of my animations. For more context and insights about this project, please read the text below. All of them have commented code, but some of them also have an explanation in READMEs (✅).
 
 
-| Code link | Result | Year | Some used techniques |
+|  | Readme status | Year | Some used techniques |
 |-------------|--------|------|--------------------|
-| [**scattered dots**](https://github.com/Bleuje/processing-animations-code/blob/main/code/scattereddots/scattereddots.pde) | [view](https://bleuje.com/gifanimationsite/single/scattereddots/) | 2018 | replacement technique, simulation |
-| [**Sierpinski triangle loop**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop/sierpinskiloop.pde) | [view](https://bleuje.com/gifanimationsite/single/sierpinskiloop/) | 2017/2021 | recursion, chromatic aberration |
-| [**sun connections**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sunconnections/sunconnections.pde) | [view](https://bleuje.com/gifanimationsite/single/sunconnections/) | 2018 | interpolation with delay, noise loop |
-| [**spiral wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralwave/spiralwave.pde) | [view](https://bleuje.com/gifanimationsite/single/spiralwave/) | 2021 | replacement technique, mesh, spiral wave |
-| [**fluid sphere obstacle**](https://github.com/Bleuje/processing-animations-code/blob/main/code/fluidsphereobstacle/fluidsphereobstacle.pde) | [view](https://bleuje.com/gifanimationsite/single/fluidsphereobstacle/) | 2017 | simulation, replacement technique |
-| [**radial collapse**](https://github.com/Bleuje/processing-animations-code/blob/main/code/radialcollapse/radialcollapse.pde) | [view](https://bleuje.com/gifanimationsite/single/radialcollapse/) | 2020 | fractal zoom, replacement technique, noise |
-| [**sphere impacts**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sphereimpacts/sphereimpacts.pde) | [view](https://bleuje.com/gifanimationsite/single/sphereimpacts/) | 2021 | particles effects, 3D geometry |
- [**two levels sliding**](https://github.com/Bleuje/processing-animations-code/blob/main/code/twolevelssliding/twolevelssliding.pde) | [view](https://bleuje.com/gifanimationsite/single/twolevelssliding/) | 2021 | replacement technique, simulation |
-| [**hilbert curve transforms**](https://github.com/Bleuje/processing-animations-code/blob/main/code/hilbertcurvetransforms/hilbertcurvetransforms.pde) | [view](https://bleuje.com/gifanimationsite/single/hilbertcurvetransforms/) | 2022 | easing, hilbert curve |
-| [**sphere wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spherewave/spherewave.pde) | [view](https://bleuje.com/gifanimationsite/single/spherewave/) | 2022 | vector maths, easing |
-| [**2D fractal sliding squares** **\***](https://github.com/Bleuje/processing-animations-code/blob/main/code/fractalsliding2d/fractalsliding2d.pde) | [view](https://bleuje.com/gifanimationsite/single/2dfractalslidingsquares/) | 2023 | recursion, fractal zoom, tree structure |
-| [**spiral magic**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralmagic/spiralmagic.pde) | [view](https://bleuje.com/gifanimationsite/single/spiralmagic/) | 2021 | 3D in P2D, spiral |
-| [**permutation patterns propagation**](https://github.com/Bleuje/processing-animations-code/blob/main/code/permutationpatternspropagation/permutationpatternspropagation.pde) | [view](https://bleuje.com/gifanimationsite/single/permutationpatternspropagation/) | 2021 | simulation, permutation patterns |
-| [**torus curve**](https://github.com/Bleuje/processing-animations-code/blob/main/code/toruscurve/toruscurve.pde) | [view](https://bleuje.com/gifanimationsite/single/toruscurve/) | 2023 | 3D geometry, mesh |
-| [**spirals sphere**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralssphere/spiralssphere.pde) | [view](https://bleuje.com/gifanimationsite/single/spiralssphere/) | 2023 | spirals, tanh |
+| [**scattered dots**](https://github.com/Bleuje/processing-animations-code/blob/main/code/scattereddots/) | ✅ | 2018 | replacement technique, simulation |
+| [**Sierpinski triangle loop**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop/) | ✅ | 2017/2021 | recursion, chromatic aberration |
+| [**sun connections**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sunconnections/) | ✅ | 2018 | interpolation with delay, noise loop |
+| [**spiral wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralwave/) | ✅ | 2021 | replacement technique, mesh, spiral wave |
+| [**fluid sphere obstacle**](https://github.com/Bleuje/processing-animations-code/blob/main/code/fluidsphereobstacle/) | ✅ | 2017 | simulation, replacement technique |
+| [**radial collapse**](https://github.com/Bleuje/processing-animations-code/blob/main/code/radialcollapse/) | ✅ | 2020 | fractal zoom, replacement technique, noise |
+| [**sphere impacts**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sphereimpacts/) | 🚧 | 2021 | particles effects, 3D geometry |
+| [**two levels sliding**](https://github.com/Bleuje/processing-animations-code/blob/main/code/twolevelssliding/) | 🚧 | 2021 | replacement technique, simulation |
+| [**hilbert curve transforms**](https://github.com/Bleuje/processing-animations-code/blob/main/code/hilbertcurvetransforms/) | 🚧 | 2022 | easing, hilbert curve |
+| [**sphere wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spherewave/) | 🚧 | 2022 | vector maths, easing |
+| [**2D fractal sliding squares** **\***](https://github.com/Bleuje/processing-animations-code/blob/main/code/fractalsliding2d/) | 🚧 | 2023 | recursion, fractal zoom, tree structure |
+| [**spiral magic**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralmagic/) | 🚧 | 2021 | 3D in P2D, spiral |
+| [**permutation patterns propagation**](https://github.com/Bleuje/processing-animations-code/blob/main/code/permutationpatternspropagation/) | 🚧 | 2021 | simulation, permutation patterns |
+| [**torus curve**](https://github.com/Bleuje/processing-animations-code/blob/main/code/toruscurve/) | 🚧 | 2023 | 3D geometry, mesh |
+| [**spirals sphere**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralssphere/) | 🚧 | 2023 | spirals, tanh |
 
 
-I'm trying to sort the list from simpler to more complex or time-consuming to fully understand, but this is highly subjective.
+I'm trying to sort the list from simpler to more complex or time-consuming to fully understand, but this is highly subjective. This set of animations is [watchable on my site here](https://bleuje.com/gifanimationsite/single/spiralssphere/) using the bottom arrows/links to navigate.
+
+Unfortunately I had to give them some kind of names, which is something I don't really like.
 
 <sub>\* Collaboration with Yann Le Gall</sub>
 
