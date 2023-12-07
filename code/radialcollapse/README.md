@@ -8,7 +8,7 @@
 
 We have a set of block instances, 3D array because of different angle, radius position and height. There are a lot more blocks drawn than the number of instances, because of replacement technique (the radius position of the blocks change).
 
-The fall of the blocks is controlled by formulas for the delay/offset of the falls. This formula mostly uses noise based on angle, and block height.
+The fall of the blocks is controlled by formulas for the delay/offset of the falls. This formula mostly uses block height and noise based on angle.
 
 This is a fractal zoom on the radius. The ratio of the fractal zoom 0.8, which means that during the time of one loop, the blocks become smaller and closer to center by a factor 0.8.
 
