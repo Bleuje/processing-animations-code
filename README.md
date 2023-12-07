@@ -1,6 +1,6 @@
 # Processing animations source code list
 
-Here are the links to the source codes of some of my animations. For more context and insights about this project, please read the text below. All of them have commented code, but some of them also have an explanation in READMEs (✅).
+This repo has the source codes of some of my animations. For more context and insights about this project, please read the text below. All of them have commented code, but some of them also have an explanation in READMEs (✅).
 
 
 |  | Readme status | Year | Some used techniques |
