@@ -34,7 +34,7 @@
 
 
 
-For the surface shape, we have a function that gives the 3D position by basically getting the height in function of position on 2D plane. This height is computed with a delay that's the distance to center + the angle to this center (obtained with atan2 function).
+For the surface shape, we have a function that gives the 3D position by basically getting the height in function of position on 2D plane. This height is computed with a sinusoid and with a delay that's the distance to center + the angle to this center (obtained with atan2 function).
 
 A black mesh is drawn by drawing a lot of tiny triangles on the surface.
 
