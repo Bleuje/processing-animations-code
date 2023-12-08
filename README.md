@@ -17,7 +17,7 @@ This repo has the source codes of some of my animations. For more context and in
 | [**sphere wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spherewave/) | 🚧 | 2022 | vector maths, easing |
 | [**2D fractal sliding squares** **\***](https://github.com/Bleuje/processing-animations-code/blob/main/code/fractalsliding2d/) | 🚧 | 2023 | recursion, fractal zoom, tree structure |
 | [**spiral magic**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralmagic/) | 🚧 | 2021 | 3D in P2D, spiral |
-| [**permutation patterns propagation**](https://github.com/Bleuje/processing-animations-code/blob/main/code/permutationpatternspropagation/) | 🚧 | 2021 | simulation, permutation patterns |
+| [**permutation patterns propagation**](https://github.com/Bleuje/processing-animations-code/blob/main/code/permutationpatternspropagation/) | 🚧 | 2021 | simulation |
 | [**torus curve**](https://github.com/Bleuje/processing-animations-code/blob/main/code/toruscurve/) | 🚧 | 2023 | 3D geometry, mesh |
 | [**spirals sphere**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralssphere/) | 🚧 | 2023 | spirals, tanh |
 
