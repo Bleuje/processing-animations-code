@@ -7,9 +7,9 @@ This repo has the source codes of some of my animations. For more context and in
 |-------------|--------|------|--------------------|
 | [**scattered dots**](https://github.com/Bleuje/processing-animations-code/blob/main/code/scattereddots/) | ✅ | 2018 | replacement technique, simulation |
 | [**Sierpinski triangle loop**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop/) | ✅ | 2017/2021 | recursion, chromatic aberration |
-| [**sun connections**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sunconnections/) | ✅ | 2018 | interpolation with delay, noise loop |
 | [**spiral wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralwave/) | ✅ | 2021 | replacement technique, mesh, spiral wave |
 | [**fluid sphere obstacle**](https://github.com/Bleuje/processing-animations-code/blob/main/code/fluidsphereobstacle/) | ✅ | 2017 | simulation, replacement technique |
+| [**sun connections**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sunconnections/) | ✅ | 2018 | interpolation with delay, noise loop |
 | [**radial collapse**](https://github.com/Bleuje/processing-animations-code/blob/main/code/radialcollapse/) | ✅ | 2020 | fractal zoom, replacement technique, noise |
 | [**sphere impacts**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sphereimpacts/) | 🚧 | 2021 | particles effects, 3D geometry |
 | [**two levels sliding**](https://github.com/Bleuje/processing-animations-code/blob/main/code/twolevelssliding/) | 🚧 | 2021 | replacement technique, simulation |
