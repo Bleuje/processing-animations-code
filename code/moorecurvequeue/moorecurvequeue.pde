@@ -201,7 +201,7 @@ void showDot(float p0, float vertexPositionOffset)
   pop();
 }
 
-// replacement technique
+// replacement technique (https://bleuje.com/tutorial4/)
 void showDotsReplacement()
 {
   int K = numberOfStopPositions - 7; // number of drawn dots, implies there will be 7 moving areas of changes :)
