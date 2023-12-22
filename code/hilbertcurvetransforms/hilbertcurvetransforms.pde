@@ -78,8 +78,8 @@ boolean recording = false; // set to false for time with mouse position, set to 
 // Hilbert curve algo from wikipedia in 2 function below (https://en.wikipedia.org/wiki/Hilbert_curve)
 // I haven't tried to understand it yet, but it's fast and quite easy to use
 
-//convert d (it's an index of a vertex on the curve's path) to (i,j) position
-// n is the number of vertices, a power of 4 : pow(4,j) where j is the order/level of the curve
+// convert d (it's an index of a vertex on the curve's path) to (i,j) position
+// here, n * n is the number of vertices, a power of 4 : pow(4,j) where j is the order/level of the curve
 PVector d2xy(int n, int d) {
     int rx, ry, s, t=d;
     float x,y;
