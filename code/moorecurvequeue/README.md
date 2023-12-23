@@ -1,4 +1,4 @@
-## More curve queue
+## Moore curve queue
 
 ![moore curve queue gif](https://bleuje.com/gifset/2021/2021_20_moorecurvequeue.gif)
 
