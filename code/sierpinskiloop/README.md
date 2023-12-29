@@ -1,6 +1,6 @@
 ## Sierpinski triangle loop
 
-![Sierpinski dots gif](https://bleuje.com/gifset/other/sierpinskiloop.gif)
+![Sierpinski triangle loop gif](https://bleuje.com/gifset/other/sierpinskiloop.gif)
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop/sierpinskiloop.pde)
 
@@ -17,6 +17,12 @@ The movement coded in drawThing is reused 3 times with different rotation during
 A "chromatic aberration" effect is used. It's about having a delay between the red, green and blue color components. So this is drawn 3 times in different colors with blendMode(ADD) and different time delays.
 
 The thing is also drawn many times with a for loop and delays to have a quite subtle trail effect.
+
+
+
+Here is the 2017 version, without trail and chromatic aberration, that probably looks better, actually:
+
+![Sierpinski triangle loop gif, 2017 version](https://bleuje.com/gifset/2017/2017_7_pinnedsierpinski.gif)
 
 ### more information and links
 
