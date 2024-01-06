@@ -15,7 +15,7 @@ This repo has the source codes of some of my animations. For more context and in
 | [**sphere impacts**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sphereimpacts/) | 🚧 | 2021 | particles effects, 3D geometry |
 | [**two levels sliding**](https://github.com/Bleuje/processing-animations-code/blob/main/code/twolevelssliding/) | 🚧 | 2021 | replacement technique, simulation |
 | [**hilbert curve transforms**](https://github.com/Bleuje/processing-animations-code/blob/main/code/hilbertcurvetransforms/) | 🚧 | 2022 | easing, hilbert curve |
-| [**sphere wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spherewave/) | 🚧 | 2022 | vector maths, easing |
+| [**sphere wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spherewave/) | 🚧 | 2022 | vector maths, easing, noise |
 | [**2D fractal sliding squares** **\***](https://github.com/Bleuje/processing-animations-code/blob/main/code/fractalsliding2d/) | 🚧 | 2023 | recursion, fractal zoom, tree structure |
 | [**spiral magic**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralmagic/) | 🚧 | 2021 | 3D in P2D, spiral |
 | [**permutation patterns propagation**](https://github.com/Bleuje/processing-animations-code/blob/main/code/permutationpatternspropagation/) | 🚧 | 2021 | simulation |
