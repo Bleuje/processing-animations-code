@@ -1,6 +1,6 @@
 // Processing code by Etienne JACOB
 // motion blur template by beesandbombs, explanation/article: https://bleuje.com/tutorial6/
-// CC BY-SA 3.0 license because it's using code from Wikipedia
+// See the license information at the end of this file.
 // View the rendered result at: https://bleuje.com/gifanimationsite/single/hilbertcurvetransforms/
 
 //////////////////////////////////////////////////////////////////////////////
@@ -75,7 +75,7 @@ float shutterAngle = .6;
 
 boolean recording = false; // set to false for time with mouse position, set to true to render frames
 
-// Hilbert curve algo from wikipedia in 2 function below (https://en.wikipedia.org/wiki/Hilbert_curve)
+// Hilbert curve algo from wikipedia in the 2 function below (https://en.wikipedia.org/wiki/Hilbert_curve)
 // I haven't tried to understand it yet, but it's fast and quite easy to use
 
 // convert d (it's an index of a vertex on the curve's path) to (i,j) position
@@ -266,3 +266,17 @@ void draw_(){
 
   pop();
 }
+
+
+/* License:
+ *
+ * Copyright (c) 2022, 2023 Etienne Jacob
+ *
+ * All rights reserved.
+ *
+ * This code after the template and the related animations are the property of the
+ * copyright holder, except for the code coming from Wikipedia.
+ * Any reproduction, distribution, or use of this material,
+ * in whole or in part, without the express written permission of the copyright
+ * holder is strictly prohibited.
+ */
