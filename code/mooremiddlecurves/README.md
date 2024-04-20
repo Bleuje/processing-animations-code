@@ -6,7 +6,7 @@
 
 ### comments
 
-Explainig the trick with an animation there: https://mastodon.social/@bleuje/111709161970031114
+Explaining the trick with an animation there: https://mastodon.social/@bleuje/111709161970031114
 
 ### more information and links
 
