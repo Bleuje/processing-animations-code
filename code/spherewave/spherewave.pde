@@ -173,6 +173,7 @@ class Particle
   {
     // setting (x,y,z) position on black sphere (position at start and end)
     // using special formulas to get evenly distributed positions
+    // see https://stackoverflow.com/a/26127012
     float phi = PI * (3. - sqrt(5.));
     float theta = phi*i;
     float y = map(i,0,n-1,1,-1);
