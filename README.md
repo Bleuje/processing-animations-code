@@ -17,7 +17,7 @@ This repo has the source codes of some of my animations. For more context and in
 | [**two levels sliding**](https://github.com/Bleuje/processing-animations-code/blob/main/code/twolevelssliding/)  | 2021 | replacement technique, simulation |
 | [**hilbert curve transforms**](https://github.com/Bleuje/processing-animations-code/blob/main/code/hilbertcurvetransforms/)  | 2022 | easing, hilbert curve |
 | [**sphere wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spherewave/)  | 2022 | vector maths, easing, noise |
-| [**2D fractal sliding squares** **\***](https://github.com/Bleuje/processing-animations-code/blob/main/code/fractalsliding2d/)  | 2023 | recursion, fractal zoom, tree structure |
+| [**2D fractal sliding squares**](https://github.com/Bleuje/processing-animations-code/blob/main/code/fractalsliding2d/)  | 2023 | recursion, fractal zoom, tree structure |
 | [**spiral magic**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralmagic/)  | 2021 | 3D in P2D, spiral |
 | [**permutation patterns propagation**](https://github.com/Bleuje/processing-animations-code/blob/main/code/permutationpatternspropagation/)  | 2021 | simulation |
 | [**torus curve**](https://github.com/Bleuje/processing-animations-code/blob/main/code/toruscurve/)  | 2023 | 3D geometry, mesh |
@@ -30,8 +30,6 @@ I'm trying to sort the list from simpler to more complex or time-consuming to fu
 This set of animations is [watchable on my site here](https://bleuje.com/gifanimationsite/single/spiralssphere/) using the bottom arrows/links to navigate.
 
 Unfortunately I had to give them some kind of names, which is something I don't really like.
-
-<sub>\* Collaboration with Yann Le Gall</sub>
 
 ---
 
