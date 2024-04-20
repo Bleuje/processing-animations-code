@@ -21,6 +21,7 @@ This repo has the source codes of some of my animations. For more context and in
 | [**spiral magic**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralmagic/)  | 2021 | 3D in P2D, spiral |
 | [**permutation patterns propagation**](https://github.com/Bleuje/processing-animations-code/blob/main/code/permutationpatternspropagation/)  | 2021 | simulation |
 | [**torus curve**](https://github.com/Bleuje/processing-animations-code/blob/main/code/toruscurve/)  | 2023 | 3D geometry, mesh |
+| [**pushed digits sphere**](https://github.com/Bleuje/processing-animations-code/blob/main/code/pusheddigitssphere/)  | 2023 | 3D in P2D, replacement technique  |
 | [**spirals sphere**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralssphere/)  | 2023 | spirals, tanh |
 
 
