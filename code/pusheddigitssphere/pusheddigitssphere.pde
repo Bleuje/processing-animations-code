@@ -111,7 +111,7 @@ float cameraZ()
 PVector positionTransform(PVector v)
 {
   PVector res;
-  res = rotZ(v.copy(), 0.17 * PI + 0.03 * PI * sin(TAU*(t-0.3))); // tilted look of the spehere, with slight change through time
+  res = rotZ(v.copy(), 0.17 * PI + 0.03 * PI * sin(TAU*(t-0.3))); // tilted look of the sphere, with slight change through time
   return res;
 }
 
