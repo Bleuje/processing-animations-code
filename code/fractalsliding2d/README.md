@@ -6,7 +6,11 @@
 
 ### comments
 
-TODO
+Done for collaboration with Yann Le Gall (https://twitter.com/Yann_LeGall)
+
+Our final loop looks like this: https://twitter.com/etiennejcb/status/1645150205443031043
+
+It was used as entry for Revision party's gif competition.
 
 ### more information and links
 
