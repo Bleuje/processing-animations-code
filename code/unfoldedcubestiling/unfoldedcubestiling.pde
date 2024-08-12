@@ -226,7 +226,7 @@ void unfoldAndDrawFace(float p)
 class Cube
 {
   int i,j;
-  float digitSeed = random(10000); // seed for randomness of faces drawing
+  float cubeSeed = random(10000); // seed for randomness of faces drawing
   
   Cube(int i_,int j_)
   {
@@ -239,7 +239,7 @@ class Cube
     // Technique : set a seed each time you draw the faces of the cube
     // then use random to get the random choices of the cube which will be always the same thanks to this seeding
     // it's hacky... it's also possible and cleaner to store the list of random choices at the Cube construction
-    randomSeed(floor(digitSeed));
+    randomSeed(floor(cubeSeed));
     
     float p = ease(progress,easingIntensity); // ease movement
     
