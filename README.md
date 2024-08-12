@@ -7,7 +7,7 @@ This repo has the source codes of some of my animations. For more context and in
 |-----------------|------|--------------------|
 | [**scattered dots**](https://github.com/Bleuje/processing-animations-code/blob/main/code/scattereddots/)  | 2018 | replacement technique, simulation |
 | [**Sierpinski triangle loop**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop/)  | 2017/2021 | recursion, chromatic aberration |
-| [**spiral wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralwave/)  | 2021 | replacement technique, mesh, spiral wave |
+| [**spiral wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralwave/)  | 2021 | replacement technique, mesh, delay |
 | [**fluid sphere obstacle**](https://github.com/Bleuje/processing-animations-code/blob/main/code/fluidsphereobstacle/)  | 2017 | simulation, replacement technique |
 | [**moore curve queue**](https://github.com/Bleuje/processing-animations-code/blob/main/code/moorecurvequeue/)  | 2021/2023 | replacement technique, hilbert curve |
 | [**moore middle curves**](https://github.com/Bleuje/processing-animations-code/blob/main/code/mooremiddlecurves/)  | 2024 | hilbert curve, delay |
