@@ -140,7 +140,7 @@ void drawSquareWithCustomContour()
   rect(0,0,L,L);
   
   // contour drawing...
-  // for code factorization, draw the same things with some rotZ increase of HALF_PI at each iteration
+  // for code factorization, draw the same things with some rotateZ increase of HALF_PI at each iteration
   for(int k=0;k<4;k++)
   {
     push();
@@ -169,7 +169,7 @@ void drawFace()
   
   // then we must draw on one side of the face
   push();
-  translate(0,0,1.8); // little bump to make sure drawing appears only one one side of the face
+  translate(0,0,1.8); // little bump to make sure drawing appears only on one side of the face
   
   int faceRotationChoice = floor(random(2)); // always the same choice for this face thanks to seeding at a right time for cube drawing (and same face drawing order)
   rotateZ(faceRotationChoice*HALF_PI);
