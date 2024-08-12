@@ -9,10 +9,10 @@ This repo has the source codes of some of my animations. For more context and in
 | [**Sierpinski triangle loop**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop/)  | 2017/2021 | recursion, chromatic aberration |
 | [**spiral wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralwave/)  | 2021 | replacement technique, mesh, delay |
 | [**fluid sphere obstacle**](https://github.com/Bleuje/processing-animations-code/blob/main/code/fluidsphereobstacle/)  | 2017 | simulation, replacement technique |
-| [**moore curve queue**](https://github.com/Bleuje/processing-animations-code/blob/main/code/moorecurvequeue/)  | 2021/2023 | replacement technique, hilbert curve |
-| [**moore middle curves**](https://github.com/Bleuje/processing-animations-code/blob/main/code/mooremiddlecurves/)  | 2024 | hilbert curve, delay |
 | [**sun connections**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sunconnections/)  | 2018 | interpolation with delay, noise loop |
 | [**radial collapse**](https://github.com/Bleuje/processing-animations-code/blob/main/code/radialcollapse/)  | 2020 | fractal zoom, replacement technique, noise |
+| [**moore curve queue**](https://github.com/Bleuje/processing-animations-code/blob/main/code/moorecurvequeue/)  | 2021/2023 | replacement technique, hilbert curve |
+| [**moore middle curves**](https://github.com/Bleuje/processing-animations-code/blob/main/code/mooremiddlecurves/)  | 2024 | hilbert curve, delay |
 | [**sphere impacts**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sphereimpacts/)  | 2021 | particles effects, matrix transforms |
 | [**two levels sliding**](https://github.com/Bleuje/processing-animations-code/blob/main/code/twolevelssliding/)  | 2021 | replacement technique, simulation |
 | [**hilbert curve transforms**](https://github.com/Bleuje/processing-animations-code/blob/main/code/hilbertcurvetransforms/)  | 2022 | easing, hilbert curve |
