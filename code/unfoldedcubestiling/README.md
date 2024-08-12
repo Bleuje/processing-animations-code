@@ -1,4 +1,4 @@
-## Moore middle curves
+## Unfolded cubes tiling
 
 ![unfolded cubes tiling gif, truchet version](https://bleuje.com/gifset/2024/2024_unfoldedcubestiling_truchet.gif)
 
