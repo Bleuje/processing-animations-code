@@ -13,10 +13,11 @@ This repo has the source codes of some of my animations. For more context and in
 | [**moore middle curves**](https://github.com/Bleuje/processing-animations-code/blob/main/code/mooremiddlecurves/)  | 2024 | hilbert curve, delay |
 | [**sun connections**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sunconnections/)  | 2018 | interpolation with delay, noise loop |
 | [**radial collapse**](https://github.com/Bleuje/processing-animations-code/blob/main/code/radialcollapse/)  | 2020 | fractal zoom, replacement technique, noise |
-| [**sphere impacts**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sphereimpacts/)  | 2021 | particles effects, 3D geometry |
+| [**sphere impacts**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sphereimpacts/)  | 2021 | particles effects, matrix transforms |
 | [**two levels sliding**](https://github.com/Bleuje/processing-animations-code/blob/main/code/twolevelssliding/)  | 2021 | replacement technique, simulation |
 | [**hilbert curve transforms**](https://github.com/Bleuje/processing-animations-code/blob/main/code/hilbertcurvetransforms/)  | 2022 | easing, hilbert curve |
 | [**sphere wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spherewave/)  | 2022 | vector maths, easing, noise |
+| [**unfolded cubes tiling**](https://github.com/Bleuje/processing-animations-code/tree/main/code/unfoldedcubestiling) | 2024 | matrix transforms, delay, truchet |
 | [**2D fractal sliding squares**](https://github.com/Bleuje/processing-animations-code/blob/main/code/fractalsliding2d/)  | 2023 | recursion, fractal zoom, tree structure |
 | [**spiral magic**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralmagic/)  | 2021 | 3D in P2D, spiral |
 | [**permutation patterns propagation**](https://github.com/Bleuje/processing-animations-code/blob/main/code/permutationpatternspropagation/)  | 2021 | simulation |
