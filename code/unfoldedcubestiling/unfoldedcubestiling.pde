@@ -108,7 +108,7 @@ float truchetActivation; // global varaible for minor glitch fix
 // for truchet pattern drawing, function for drawing one arc
 void drawArc(int curveIndex)
 {
-  if(curveIndex == (numberOfTruchetCurves-1)/2) drawDashedArc(); // middle arc will be dashed (this is because numberOfTruchetCurves = 3)
+  if(curveIndex == (numberOfTruchetCurves-1)/2) drawDashedArc(); // middle arc will be dashed
   else // else use plain arc function of Processing
   {
     float r = 2*map(curveIndex,0,numberOfTruchetCurves-1,0.4*L,0.6*L);
