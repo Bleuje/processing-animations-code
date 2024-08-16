@@ -171,7 +171,7 @@ void drawFace()
   push();
   translate(0,0,1.8); // little bump to make sure drawing appears only on one side of the face
   
-  int faceRotationChoice = floor(random(2)); // always the same choice for this face thanks to seeding at a right time for cube drawing (and same face drawing order)
+  int faceRotationChoice = floor(random(4)); // always the same choice for this face thanks to seeding at a right time for cube drawing (and same face drawing order)
   rotateZ(faceRotationChoice*HALF_PI);
   
   if(DRAWING_STYLE == 0) // draw digit
