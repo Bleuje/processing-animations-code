@@ -1,7 +1,6 @@
 // Processing code by Etienne JACOB
 // motion blur template by beesandbombs, explanation/article: https://bleuje.com/tutorial6/
 // See the license information at the end of this file.
-// View the rendered result at: https://bleuje.com/gifanimationsite/single/sierpinskiloop/
 
 //////////////////////////////////////////////////////////////////////////////
 // Start of template
