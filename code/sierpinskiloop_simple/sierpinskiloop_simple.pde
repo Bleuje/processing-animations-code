@@ -144,7 +144,7 @@ void draw_(){
   
   triangle(v1.x,v1.y,v2.x,v2.y,v3.x,v3.y); // drawing the main triangle
   
-  float t2 = 3*t; // delay both based on R, G or B color, and on i of the loop*
+  float t2 = 3*t;
   
   float rotationIndex = floor(t2)%3; // we draw the scene with 3 different successive rotations
   float q = t2%1; // fractional part for time inside current rotation
