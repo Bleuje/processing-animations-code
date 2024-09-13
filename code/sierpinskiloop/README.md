@@ -2,7 +2,7 @@
 
 ![Sierpinski triangle loop gif](https://bleuje.com/gifset/other/sierpinskiloop.gif)
 
-## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop/sierpinskiloop.pde)
+## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop/sierpinskiloop.pde) / [simpler version code](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop_simple/sierpinskiloop_simple.pde)
 
 ### comments
 
