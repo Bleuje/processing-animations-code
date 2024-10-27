@@ -2,6 +2,9 @@
 // motion blur template by beesandbombs, explanation/article: https://bleuje.com/tutorial6/
 // See the license information at the end of this file.
 
+// This is the main Processing code file,
+// but it's using moore.pde and voronoi.frag in folder
+
 //////////////////////////////////////////////////////////////////////////////
 // Start of template
 
