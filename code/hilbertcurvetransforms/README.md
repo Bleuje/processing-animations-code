@@ -4,13 +4,11 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/hilbertcurvetransforms/hilbertcurvetransforms.pde)
 
-### comments
+#### some used techniques
 
-TODO
+easing, hilbert curve
 
-### more information and links
-
-Year: 2022
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/hilbertcurvetransforms/
 

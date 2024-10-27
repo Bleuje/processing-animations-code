@@ -4,7 +4,11 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/fluidsphereobstacle/fluidsphereobstacle.pde)
 
-### comments
+#### some used techniques
+
+simulation, replacement technique
+
+### other comments
 
 It's using a simulation of particles following a flow field.
 
@@ -17,9 +21,7 @@ Once the particle paths are computed, [replacement technique](https://bleuje.com
 
 A black sphere is then simply drawn, its position and size have been adjusted experimentally.
 
-### more information and links
-
-Year: 2017
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/fluidsphereobstacle/
 

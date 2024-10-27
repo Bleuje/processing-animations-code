@@ -4,7 +4,11 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/sunconnections/sunconnections.pde)
 
-### comments
+#### some used techniques
+
+interpolation with delay, noise loop
+
+### other comments
 
 First there is a set of points, with different random parameters. Each point moves around a random position (x0,y0), with a looping noise-based path. How to make a noise loop is explained in [this post](https://bleuje.com/tutorial3/), there's also a [video](https://www.youtube.com/watch?v=3_0Ax95jIrk) about it by the coding train on youtube. OpenSimplexNoise is used instead of Processing noise function, but it's similar.
 
@@ -17,9 +21,7 @@ The random (x0,y0) position is set using formulas so that it's distributed to ha
 
 Now comes the tricky part: for each pair {i,j} of points, how to draw these connections between them. Let's say we have a parameter q in [0,1] where at 0 we're on dot i, at 1 we're on dot j, and in between we'll be on the curve. At q, the dot j is seen with the delay delayFactor\*(1-q) where delayFactor is a parameter we can tune. No delay when we're at q=1, on j, and delayFactor when we're on i. Still at q, the dot i is seen with the delay delayFactor\*q. No delay when we're at q=0 on i and delayFactor when we're on j. So we have two seen dot positions a and b, seen with these delays when we're at q. To get our current position on the curve we do this linear interpolation: lerp(a,b,q).
 
-### more information and links
-
-Year: 2018
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/sunconnections/
 

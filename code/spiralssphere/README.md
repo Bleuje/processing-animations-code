@@ -4,9 +4,9 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralssphere/spiralssphere.pde)
 
-### comments
+#### some used techniques
 
-TODO
+spirals, tanh
 
 ### more information and links
 

@@ -4,7 +4,11 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/radialcollapse/radialcollapse.pde)
 
-### comments
+#### some used techniques
+
+fractal zoom, replacement technique, noise
+
+### other comments
 
 We have a set of block instances, 3D array because of different angle, radius position and height. There are a lot more blocks drawn than the number of instances, because of replacement technique (the radius position of the blocks change).
 
@@ -23,9 +27,7 @@ pow(1/RATIO,1.0*i/N) is about changing the radius depending on radius index i.
 
 After we can draw the evolution of a block with parameter p, we can use the [replacement technique (with 3D grid)](https://bleuje.com/tutorial5/) to fill everything and have a perfect loop.
 
-### more information and links
-
-Year: 2020
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/radialcollapse/
 

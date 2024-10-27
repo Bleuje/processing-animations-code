@@ -4,13 +4,11 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/sphereimpacts/sphereimpacts.pde)
 
-### comments
+#### some used techniques
 
-TODO
+particles effects, matrix transforms
 
-### more information and links
-
-Year: 2021
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/sphereimpacts/
 

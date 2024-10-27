@@ -4,13 +4,11 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralmagic/spiralmagic.pde)
 
-### comments
+#### some used techniques
 
-TODO
+3D in P2D, spiral
 
-### more information and links
-
-Year: 2021
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/spiralmagic/
 

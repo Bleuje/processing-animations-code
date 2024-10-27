@@ -4,7 +4,11 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/fractalsliding2d/fractalsliding2d.pde)
 
-### comments
+#### some used techinques
+
+recursion, fractal zoom, tree structure
+
+### other comments
 
 Done for collaboration with Yann Le Gall (https://twitter.com/Yann_LeGall)
 
@@ -12,9 +16,7 @@ Our final loop looks like this: https://twitter.com/etiennejcb/status/1645150205
 
 It was used as entry for Revision party's gif competition.
 
-### more information and links
-
-Year: 2023
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/2dfractalslidingsquares/
 

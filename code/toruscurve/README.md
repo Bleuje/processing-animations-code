@@ -4,13 +4,11 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/toruscurve/toruscurve.pde)
 
-### comments
+#### some used techniques
 
-TODO
+3D geometry, mesh
 
-### more information and links
-
-Year: 2023
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/toruscurve/
 

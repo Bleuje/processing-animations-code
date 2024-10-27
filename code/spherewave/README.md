@@ -4,13 +4,11 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/spherewave/spherewave.pde)
 
-### comments
+#### some used techniques
 
-TODO
+vector maths, easing, noise
 
-### more information and links
-
-Year: 2022
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/spherewave/
 

@@ -4,13 +4,11 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/twolevelssliding/twolevelssliding.pde)
 
-### comments
+#### some used techniques
 
-TODO
+replacement technique, simulation
 
-### more information and links
-
-Year: 2021
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/twolevelssliding/
 

@@ -4,16 +4,18 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/moorevoronoi/moorevoronoi.pde)
 
-### comments
+#### some used techniques
+
+replacement technique, hilbert curve, voronoi edges with shader
+
+### other comments
 
 Combining Moore curve, replacement technique and Voronoi cells drawing.
 For the voronoi cells drawing, using exact distance to edges, by using https://www.shadertoy.com/view/ldl3W8 by Inigo Quilez, with this article explaing it: https://iquilezles.org/articles/voronoilines/
 
 My first gif animation using Processing + shader!
 
-### more information and links
-
-Year: 2024
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/moorevoronoi/
 

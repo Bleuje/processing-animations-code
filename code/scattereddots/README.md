@@ -4,7 +4,11 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/scattereddots/scattereddots.pde)
 
-### comments
+#### some used techniques
+
+replacement technique, simulation
+
+### other comments
 
 This animation is simple but has had a lot of success on tumblr.
 
@@ -16,9 +20,7 @@ From this list, the position at parameter p in [0,1] is found using interpolatio
 
 Similarly to position, there is a list of sizes of dot, and interpolation between these sizes.
 
-### more information and links
-
-Year: 2018
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/scattereddots/
 

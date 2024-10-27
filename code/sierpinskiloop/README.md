@@ -4,7 +4,13 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop/sierpinskiloop.pde) / [simpler version code](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop_simple/sierpinskiloop_simple.pde)
 
-### comments
+#### some used techniques
+
+recursion, chromatic aberration
+
+### other comments
+
+(made in 2017, revised in 2021)
 
 First there is a function drawFractal to draw a [Sierpinski triangle fractal](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle). This is done by recursion: to draw the fractal into a triangle, draw the triangle, use the middles of its 3 segments to draw the fractals inside it recusively. Stop after a max number ("depth") of iterations.
 
@@ -24,9 +30,7 @@ Here is the 2017 version, without trail and chromatic aberration, that probably 
 
 ![Sierpinski triangle loop gif, 2017 version](https://bleuje.com/gifset/2017/2017_7_pinnedsierpinski.gif)
 
-### more information and links
-
-Year: 2017, revised in 2021
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/sierpinskiloop/
 

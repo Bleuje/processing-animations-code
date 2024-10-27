@@ -4,13 +4,15 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/mooremiddlecurves/mooremiddlecurves.pde)
 
+#### some used techniques
+
+hilbert curve, delay
+
 ### comments
 
 Explaining the trick with an animation there: https://mastodon.social/@bleuje/111709161970031114
 
-### more information and links
-
-Year: 2024
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/mooremiddlecurves/
 

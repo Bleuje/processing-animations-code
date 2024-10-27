@@ -4,13 +4,11 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/moorecurvequeue/moorecurvequeue.pde)
 
-### comments
+#### some used techniques
 
-TODO
+replacement technique, hilbert curve
 
-### more information and links
-
-Year: 2021/2023
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/moorecurvequeue/
 

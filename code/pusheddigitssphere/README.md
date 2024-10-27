@@ -4,15 +4,17 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/pusheddigitssphere/pusheddigitssphere.pde)
 
-### comments
+#### some used techniques
+
+3D in P2D, replacement technique
+
+### other comments
 
 Inspired by: https://twitter.com/Yugemaku/status/1726559476172616047
 
 I had to use pen and paper to figure out the maths
 
-### more information and links
-
-Year: 2023
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/pusheddigitssphere/
 

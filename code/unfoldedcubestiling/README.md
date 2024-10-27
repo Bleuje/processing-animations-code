@@ -6,7 +6,11 @@
 
 ## [code](https://github.com/Bleuje/processing-animations-code/blob/main/code/unfoldedcubestiling/unfoldedcubestiling.pde)
 
-### comments
+#### some used techniques
+
+matrix transforms, delay, truchet
+
+### other comments
 
 Inspired by Yann Le Gall, see his unfolded cube animation there:
 - https://x.com/Yann_LeGall/status/1813347547454575100
@@ -14,9 +18,7 @@ Inspired by Yann Le Gall, see his unfolded cube animation there:
 
 The loop technique can illustrate this tutorial: https://bleuje.com/tutorial2/
 
-### more information and links
-
-Year: 2024
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/unfoldedcubestiling_truchet/
 
