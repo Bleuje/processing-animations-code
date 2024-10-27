@@ -8,9 +8,7 @@
 
 spirals, tanh
 
-### more information and links
-
-Year: 2023
+### links
 
 On bleuje site: https://bleuje.com/gifanimationsite/single/spiralssphere/
 
