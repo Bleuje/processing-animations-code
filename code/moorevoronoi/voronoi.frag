@@ -51,7 +51,6 @@ void main() {
   for (int i = 0; i < numberOfPoints; i++) {
     vec2 point = vec2(pointsX[i], pointsY[i]);
     float dist = distance(uv, point);
-
     if (dist < minDist) {
       vToClosestPoint = point - uv;
       minDist = dist;
@@ -61,8 +60,6 @@ void main() {
   minDist = 10000.0;
   for (int i = 0; i < numberOfPoints; i++) {
     vec2 point = vec2(pointsX[i], pointsY[i]);
-    float dist = distance(uv, point);
-    
     vec2 vToPoint = point - uv;
     if( dot(vToClosestPoint-vToPoint,vToClosestPoint-vToPoint)>1.0 )
         minDist = min( minDist, dot( 0.5*(vToClosestPoint+vToPoint), normalize(vToPoint-vToClosestPoint) ) );
@@ -73,8 +70,6 @@ void main() {
   int numberOfBorderPoints = curveSize*4;
   for (int i = 0; i < numberOfBorderPoints; i++) {
     vec2 point = getBorderPoint(i);
-    float dist = distance(uv, point);
-    
     vec2 vToPoint = point - uv;
     if( dot(vToClosestPoint-vToPoint,vToClosestPoint-vToPoint)>1.0 )
         minDist = min( minDist, dot( 0.5*(vToClosestPoint+vToPoint), normalize(vToPoint-vToClosestPoint) ) );
