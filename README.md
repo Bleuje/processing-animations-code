@@ -18,6 +18,7 @@ This repo has the source codes of some of my animations. For more context and in
 | [**hilbert curve transforms**](https://github.com/Bleuje/processing-animations-code/blob/main/code/hilbertcurvetransforms/)  | 2022 | easing, hilbert curve |
 | [**sphere wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spherewave/)  | 2022 | vector maths, easing, noise |
 | [**unfolded cubes tiling**](https://github.com/Bleuje/processing-animations-code/tree/main/code/unfoldedcubestiling) | 2024 | matrix transforms, delay, truchet |
+| [**moore voronoi**](https://github.com/Bleuje/processing-animations-code/tree/main/code/moorevoronoi) | 2024 | replacement technique, hilbert curve, voronoi edges with shader |
 | [**2D fractal sliding squares**](https://github.com/Bleuje/processing-animations-code/blob/main/code/fractalsliding2d/)  | 2023 | recursion, fractal zoom, tree structure |
 | [**spiral magic**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralmagic/)  | 2021 | 3D in P2D, spiral |
 | [**permutation patterns propagation**](https://github.com/Bleuje/processing-animations-code/blob/main/code/permutationpatternspropagation/)  | 2021 | simulation |
