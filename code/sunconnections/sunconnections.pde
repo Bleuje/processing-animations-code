@@ -149,13 +149,13 @@ void draw_()
   {
     for(int j=0;j<i;j++)
     {
-      float distanceToCenter = dist(array[i].x(t),array[i].y(t),array[j].x(t),array[j].y(t));
+      float distanceBetweenPoints = dist(array[i].x(t),array[i].y(t),array[j].x(t),array[j].y(t));
       
-      float sw = constrain(map(distanceToCenter,0,0.45*width,swmax,0),0,swmax);
+      float sw = constrain(map(distanceBetweenPoints,0,0.45*width,swmax,0),0,swmax);
       strokeWeight(sw);
       stroke(255,50); // curve drawn with small transparent dots
       
-      float delayFactor = distanceToCenter*globalDelayFactor/width; // strength of the delay effect explained later
+      float delayFactor = distanceBetweenPoints*globalDelayFactor/width; // strength of the delay effect explained later
       
       for(int k=0;k<=numberOfDotsOnCurve;k++)
       {
