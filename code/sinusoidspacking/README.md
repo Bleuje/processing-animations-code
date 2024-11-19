@@ -6,7 +6,7 @@
 
 #### some used techniques
 
-circle packing
+circle packing, lighting from normal
 
 ### links
 
