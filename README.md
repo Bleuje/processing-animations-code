@@ -6,15 +6,16 @@ This repo has the source codes of some of my animations. For more context and in
 |   | Year |
 |-----------------|------|
 | [**scattered dots**](https://github.com/Bleuje/processing-animations-code/blob/main/code/scattereddots/)  | 2018 |
-| [**Sierpinski triangle loop**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop/)  | 2017/2021 |
+| [**Sierpinski triangle loop**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sierpinskiloop/)  | 2017,2021 |
 | [**spiral wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spiralwave/)  | 2021 |
 | [**fluid sphere obstacle**](https://github.com/Bleuje/processing-animations-code/blob/main/code/fluidsphereobstacle/)  | 2017 |
 | [**sun connections**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sunconnections/)  | 2018 |
 | [**radial collapse**](https://github.com/Bleuje/processing-animations-code/blob/main/code/radialcollapse/)  | 2020 |
-| [**moore curve queue**](https://github.com/Bleuje/processing-animations-code/blob/main/code/moorecurvequeue/)  | 2021/2023 |
+| [**moore curve queue**](https://github.com/Bleuje/processing-animations-code/blob/main/code/moorecurvequeue/)  | 2021,2023 |
 | [**moore middle curves**](https://github.com/Bleuje/processing-animations-code/blob/main/code/mooremiddlecurves/)  | 2024 |
 | [**sphere impacts**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sphereimpacts/)  | 2021 |
 | [**two levels sliding**](https://github.com/Bleuje/processing-animations-code/blob/main/code/twolevelssliding/)  | 2021 |
+| [**sinusoids packing**](https://github.com/Bleuje/processing-animations-code/blob/main/code/sinusoidspacking/)  | 2018,2024 |
 | [**hilbert curve transforms**](https://github.com/Bleuje/processing-animations-code/blob/main/code/hilbertcurvetransforms/)  | 2022 |
 | [**sphere wave**](https://github.com/Bleuje/processing-animations-code/blob/main/code/spherewave/)  | 2022 |
 | [**unfolded cubes tiling**](https://github.com/Bleuje/processing-animations-code/tree/main/code/unfoldedcubestiling) | 2024 |
