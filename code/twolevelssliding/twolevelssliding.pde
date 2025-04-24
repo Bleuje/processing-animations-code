@@ -59,7 +59,7 @@ void draw()
     updatePixels();
     
     if (frameCount<=numFrames) {
-      saveFrame("fr###.gif");
+      saveFrame("data/fr###.gif");
       println(frameCount,"/",numFrames);
     }
     
@@ -237,7 +237,7 @@ class System
         fill(0);
         rectMode(CENTER);
         stroke(255);
-        strokeWeight(1.5);
+        strokeWeight(1.75);
         rect(0,0,9,9);
         pop();
       }
@@ -290,6 +290,7 @@ System system;
 void setup(){
   size(600,600,P3D);
   result = new int[width*height][3];
+  smooth(8);
   
   // constructing the main path "by hand"
   mainPath.add(new PVector(-1,0));
