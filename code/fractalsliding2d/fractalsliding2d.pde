@@ -4,9 +4,6 @@
 // See the license information at the end of this file.
 // View the rendered result at: https://bleuje.com/gifanimationsite/single/2dfractalslidingsquares/
 
-// using double instead of float makes the code a bit more complicated
-// (there seems to be a precision issue with float)
-
 //////////////////////////////////////////////////////////////////////////////
 // Start of template
 
@@ -16,16 +13,16 @@ float c; // other global variable for testing things, controlled by mouse
 
 // ease in and out, [0,1] -> [0,1], with a parameter g:
 // https://patakk.tumblr.com/post/88602945835/heres-a-simple-function-you-can-use-for-easing
-double ease(double p, double g) {
+float ease(float p, float g) {
   if (p < 0.5) 
-    return 0.5 * Math.pow(2*p, g);
+    return 0.5 * pow(2*p, g);
   else
-    return 1 - 0.5 * Math.pow(2*(1 - p), g);
+    return 1 - 0.5 * pow(2*(1 - p), g);
 }
 
-double c01(double x)
+float c01(float x)
 {
-  return Math.min(1,Math.max(0,x));
+  return min(1,max(0,x));
 }
 
 void draw()
@@ -123,41 +120,41 @@ class Structure
   
   // square path, using polar coordinates, maybe not the best choice :)
   // also has easing to make the movement stop
-  PVector path0(double q)
+  PVector path0(float q)
   {
-    q = (q+1234*4)%1; // making sure q is in [0,1[
-    double doubleIndex = 4*q; // has index range, but still a double so far
-    int index1 = (int)Math.floor(doubleIndex);
+    q = ((q%1)+1)%1; // making sure q is in [0,1[
+    float floatIndex = 4*q;
+    int index1 = floor(floatIndex);
     int index2 = index1+1;
-    double angle1 = index1*HALF_PI+QUARTER_PI-PI;
-    double angle2 = index2*HALF_PI+QUARTER_PI-PI;
+    float angle1 = index1*HALF_PI+QUARTER_PI-PI;
+    float angle2 = index2*HALF_PI+QUARTER_PI-PI;
     
-    double fr = doubleIndex-index1; // fractional part of doubleIndex
-    double es = ease(c01(fr*4),2.5); // classic easing + moving and stopping with the constrain (c01)
-    double radius = 2/sqrt(2);
-    PVector v1 = new PVector((float)(Math.cos(angle1)*radius),(float)(Math.sin(angle1)*radius)); // fixed position 1 to define path
-    PVector v2 = new PVector((float)(Math.cos(angle2)*radius),(float)(Math.sin(angle2)*radius)); // fixed position 2 to define path
+    float fr = floatIndex-index1; // fractional part of floatIndex
+    float es = ease(c01(fr*4),2.5); // classic easing + moving and stopping with the constrain (c01)
+    float radius = 2/sqrt(2);
+    PVector v1 = new PVector(cos(angle1)*radius,sin(angle1)*radius); // fixed position 1 to define path
+    PVector v2 = new PVector(cos(angle2)*radius,sin(angle2)*radius); // fixed position 2 to define path
     // interpolate between fixed positions with easing
     PVector v = v1.copy().lerp(v2,(float)es);
     return v;
   }
   
   // offset on previous path
-  PVector path1(double q)
+  PVector path1(float q)
   {
-    double q2 = q-float(childIndex)/numberOfChildren-0.05+offset;
+    float q2 = q-float(childIndex)/numberOfChildren-0.05+offset;
     // (childIndex/3 is the correct offset to have the 3 children evenly at different places of the path)
     return path0(q2*direction);
   }
   
-  PVector path2(double q)
+  PVector path2(float q)
   {
     // using pow to make the movement slower and slower
     // also using the min function to stop moving completely
-    return path1(-Math.pow(-Math.min(0,q*0.2),2.5));
+    return path1(-pow(-min(0,q*0.2),2.5));
   }
   
-  void show(double p,int maxDepth2) // maxDepth2 is used to stop the recursion, it can be different from MAX_DEPTH
+  void show(float p,int maxDepth2) // maxDepth2 is used to stop the recursion, it can be different from MAX_DEPTH
   {
     stroke(255);
     noFill();
